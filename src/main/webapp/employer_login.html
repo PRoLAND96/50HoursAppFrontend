@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés</title>
+    <link rel="stylesheet" href="./css/employer_login.css">
+</head>
+<body>
+<div class="login-container">
+    <div class="header">
+        <h2>Bejelentkezés</h2>
+    </div>
+    <div class="inside-container">
+        <h3>Munkáltató</h3>
+        <form id="loginForm" action="javascript:void(0)" method="post">
+            <div class="form-group">
+                <label for="username">Felhasználónév:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Jelszó:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="button" class="button" onclick="submitLoginForm()"><b>Bejelentkezés</b></button>
+        </form>
+        <p>Nincs még fiókod? <a href="employer_signup.html">Regisztrálj itt!</a></p>
+    </div>
+</div>
+
+<script>
+    function submitLoginForm() {
+        // Űrlap adatok begyűjtése
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        // JSON objektum létrehozása az adatokból
+        var loginData = {
+            "username": username,
+            "password": password
+        };
+
+        // Fetch API használata az AJAX kérés elküldésére
+        fetch('http://localhost:8080/signup', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(loginData)
+        })
+            .then(function(response) {
+                if (response.ok) {
+                    return response.json();
+                }
+                throw new Error('Network response was not ok.');
+            })
+            .then(function(data) {
+                // Sikeres válasz esetén
+                alert("Sikeres bejelentkezés! Üdvözöljük, " + data.username + "!");
+            })
+            .catch(function(error) {
+                // Sikertelen válasz esetén vagy hiba esetén
+                alert("Hiba történt a bejelentkezés során: " + error.message);
+            });
+    }
+</script>
+
+</body>
+</html>
