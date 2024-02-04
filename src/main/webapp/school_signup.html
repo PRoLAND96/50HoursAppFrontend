@@ -15,8 +15,8 @@
         <h3>ISKOLA</h3>
         <form id="registerForm" action="javascript:void(0)" method="post"> <!-- Az űrlap a JavaScript segítségével fog adatokat kezelni -->
             <div class="form-group">
-                <label for="username">Felhasználónév:</label>
-                <input type="text" id="username" name="username" required>
+                <label for="name">Felhasználónév:</label>
+                <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
                 <label for="email">E-mail cím:</label>
@@ -25,22 +25,6 @@
             <div class="form-group">
                 <label for="password">Jelszó:</label>
                 <input type="password" id="password" name="password" required>
-            </div>
-            <div class="form-group">
-                <table>
-                    <tr>
-                        <td>
-                            <label for="user-type">Felhasználó típusa:</label>
-                        </td>
-                        <td>
-                            <select id="user-type" name="user-type">
-                                <option value="diak">Diák</option>
-                                <option value="iskola">Iskola</option>
-                                <option value="munkaltato">Munkáltató</option>
-                            </select>
-                        </td>
-                    </tr>
-                </table>
             </div>
             <button type="button" class="button" onclick="submitRegisterForm()">Regisztráció</button>
         </form>
@@ -51,17 +35,15 @@
 <script>
     function submitRegisterForm() {
         // Űrlap adatok begyűjtése
-        var username = document.getElementById('username').value;
+        var name = document.getElementById('name').value;
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
-        var userType = document.getElementById('user-type').value;
 
         // JSON objektum létrehozása az adatokból
         var registerData = {
-            "username": username,
+            "name": name,
             "email": email,
-            "password": password,
-            "user-type": userType
+            "password": password
         };
 
         // Fetch API használata az AJAX kérés elküldésére
@@ -74,13 +56,9 @@
         })
             .then(function(response) {
                 if (response.ok) {
-                    return response.json();
+                    alert("Sikeres regisztráció.")
                 }
                 throw new Error('Network response was not ok.');
-            })
-            .then(function(data) {
-                // Sikeres regisztráció esetén
-                alert("Sikeres regisztráció! Üdvözöljük, " + data.username + "!");
             })
             .catch(function(error) {
                 // Sikertelen regisztráció esetén vagy hiba esetén
