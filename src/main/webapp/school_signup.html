@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+    <link rel="stylesheet" href="./css/school_login.css"> <!-- A saját CSS stíluslapodhoz vezető link -->
+</head>
+<body>
+<div class="login-container">
+    <div class="header">
+        <h2>Regisztráció</h2>
+    </div>
+    <div class="inside-container">
+        <h3>ISKOLA</h3>
+        <form id="registerForm" action="javascript:void(0)" method="post"> <!-- Az űrlap a JavaScript segítségével fog adatokat kezelni -->
+            <div class="form-group">
+                <label for="username">Felhasználónév:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail cím:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Jelszó:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="user-type">Felhasználó típusa:</label>
+                        </td>
+                        <td>
+                            <select id="user-type" name="user-type">
+                                <option value="diak">Diák</option>
+                                <option value="iskola">Iskola</option>
+                                <option value="munkaltato">Munkáltató</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <button type="button" class="button" onclick="submitRegisterForm()">Regisztráció</button>
+        </form>
+        <p>Már van fiókod? <a href="school_login.html">Jelentkezz be!</a></p> <!-- Bejelentkezési link -->
+    </div>
+</div>
+
+<script>
+    function submitRegisterForm() {
+        // Űrlap adatok begyűjtése
+        var username = document.getElementById('username').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var userType = document.getElementById('user-type').value;
+
+        // JSON objektum létrehozása az adatokból
+        var registerData = {
+            "username": username,
+            "email": email,
+            "password": password,
+            "user-type": userType
+        };
+
+        // Fetch API használata az AJAX kérés elküldésére
+        fetch('http://localhost:8080/signup', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(registerData)
+        })
+            .then(function(response) {
+                if (response.ok) {
+                    return response.json();
+                }
+                throw new Error('Network response was not ok.');
+            })
+            .then(function(data) {
+                // Sikeres regisztráció esetén
+                alert("Sikeres regisztráció! Üdvözöljük, " + data.username + "!");
+            })
+            .catch(function(error) {
+                // Sikertelen regisztráció esetén vagy hiba esetén
+                alert("Hiba történt a regisztráció során: " + error.message);
+            });
+    }
+</script>
+</body>
+</html>
