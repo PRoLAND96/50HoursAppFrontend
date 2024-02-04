@@ -1,0 +1,87 @@
+/* Alapértelmezett stílusok */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #caf0f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum magasság: teljes képernyőmagasság */
+}
+
+header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.student-section a,
+.school-section a,
+.employer-section a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* A lábléc legyen automatikusan az oldal alján */
+}
+
+
+/* Responszív stílusok */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+}
