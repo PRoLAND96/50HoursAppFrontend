@@ -26,6 +26,22 @@
                 <label for="password">Jelszó:</label>
                 <input type="password" id="password" name="password" required>
             </div>
+            <div class="form-group">
+                <label for="address">Cím:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefonszám:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="schoolName">Iskola neve:</label>
+                <input type="text" id="schoolName" name="schoolName" required>
+            </div>
+            <div class="form-group">
+                <label for="omId">OM azonosító:</label>
+                <input type="text" id="omId" name="omId" required>
+            </div>
             <button type="button" class="button" onclick="submitRegisterForm()">Regisztráció</button>
         </form>
         <p>Már van fiókod? <a href="student_login.html">Jelentkezz be!</a></p> <!-- Bejelentkezési link -->
@@ -38,12 +54,20 @@
         var name = document.getElementById('name').value;
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
+        var address = document.getElementById('address').value;
+        var phone = document.getElementById('phone').value;
+        var schoolName = document.getElementById('schoolName').value;
+        var omId = document.getElementById('omId').value;
 
         // JSON objektum létrehozása az adatokból
         var registerData = {
             "name": name,
             "email": email,
-            "password": password
+            "password": password,
+            "address": address,
+            "phone": phone,
+            "schoolName": schoolName,
+            "omId": omId
         };
 
         // Fetch API használata az AJAX kérés elküldésére

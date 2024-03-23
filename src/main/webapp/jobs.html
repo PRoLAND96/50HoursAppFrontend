@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Közösségi Szolgálat Portál</title>
+    <link rel="stylesheet" href="./css/style.css"> <!-- Link a CSS stíluslapodhoz -->
+</head>
+<body>
+<header>
+    <h1>Közösségi Szolgálat Portál</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Munkák</a></li>
+            <li><a href="about.html">Előrehaladás</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="content">
+        <div class="job-list-content">
+            <div>
+                <label for="typeSearch">Search by Type:</label>
+                <input type="text" id="typeSearch" placeholder="Enter type...">
+                <button onclick="searchByType()">Search</button>
+            </div>
+            <ul class="job-cards" id="institutionList">
+                <!-- Institutions will be displayed here -->
+            </ul>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2024 Közösségi Szolgálat Portál</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetchInstitutions();
+
+        function fetchInstitutions() {
+            fetch('http://localhost:8080/institutions')
+                .then(response => response.json())
+                .then(data => displayInstitutions(data))
+                .catch(error => console.error('Error fetching institutions:', error));
+        }
+
+        function displayInstitutions(institutions) {
+            const institutionList = document.getElementById('institutionList');
+            institutionList.innerHTML = '';  // Clear previous list
+
+            institutions.forEach(institution => {
+                const listItem = document.createElement('li');
+
+                const name = document.createElement('h2');
+                name.textContent = `${institution.name}`;
+                name.classList.add('name');
+                listItem.appendChild(name);
+
+                const type = document.createElement('p');
+                type.textContent = `${institution.type.name}`;
+                type.classList.add('type');
+                listItem.appendChild(type);
+
+                const location = document.createElement('p');
+                location.textContent = `${institution.location}`;
+                location.classList.add('location');
+                listItem.appendChild(location);
+
+                const description = document.createElement('p');
+                description.textContent = `${institution.description.text}`;
+                description.classList.add('description');
+                listItem.appendChild(description);
+
+                institutionList.appendChild(listItem);
+            });
+        }
+    });
+</script>
+</body>
+</html>
