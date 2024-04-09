@@ -19,15 +19,20 @@ header {
 header h1 {
     margin: 0;
 }
-
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 nav ul {
+    display: flex;
     list-style-type: none;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 nav ul li a {
@@ -35,7 +40,9 @@ nav ul li a {
     text-decoration: none;
 }
 
-
+.search{
+    padding: 10px;
+}
 
 main {
     max-width: 1200px;
@@ -52,8 +59,18 @@ main {
 
 .job-cards{
     list-style-type: none;
-    margin: 0 0 1rem;
     padding: 0;
+}
+.apply-button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
 }
 
 #institutionList {
@@ -109,6 +126,6 @@ footer {
     }
 
     main {
-        padding: 0 10px;
+        padding: 10px;
     }
 }
