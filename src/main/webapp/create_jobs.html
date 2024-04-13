@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Közösségi Szolgálat Portál - Állásajánlat Létrehozása</title>
+    <link rel="stylesheet" href="./css/style.css"> <!-- Link a CSS stíluslapodhoz -->
+    <style>
+        @media (max-width: 600px) {
+            main {
+                width: 100%;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+
+            }
+            table {
+                width: 100%;
+                padding: 5%;
+            }
+            tr {
+                width: 100%;
+            }
+            textarea {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Közösségi Szolgálat Portál</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Munkák</a></li>
+            <li><a href="about.html">Előrehaladás</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main style="padding: 20px;">
+    <div class="content">
+        <h2 style="text-align: center;">Állásajánlat Létrehozása</h2>
+        <form action='http://localhost:8080/institutions' method="POST">
+            <table style="width: 100%; padding-top: 20px;">
+                <tr>
+                    <td style="width:30%">
+                        <label for="name">Név:</label>
+                    </td>
+                    <td>
+                        <input style="width: 100%;" type="text" id="name" name="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label  for="type">Típus:</label>
+                    </td>
+                    <td>
+                        <input style="width: 100%;" type="text" id="type" name="type" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="location">Helyszín:</label>
+                    </td>
+                    <td>
+                        <input style="width: 100%;" type="text" id="location" name="location" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top;">
+                        <label  for="description">Leírás:</label>
+                    </td>
+                    <td>
+                        <textarea style="width: 100%; min-height: 50px" id="description" name="description" required></textarea>
+                    </td>
+                </tr>
+            </table>
+            <input class="app" type="submit" value="Létrehozás">
+
+        </form>
+    </div>
+    <div class="content2" style="border: solid thin black; height: 100px;">
+        <h2 style="text-align: center;">Jelenlegi Állásajánlatok</h2>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2024 Közösségi Szolgálat Portál</p>
+</footer>
+</body>
+</html>

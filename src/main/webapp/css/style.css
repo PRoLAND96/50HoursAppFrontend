@@ -103,7 +103,9 @@ main {
     font-style: italic;
     color: #555;
 }
-
+.content2{
+    margin-top: 20px;
+}
 
 footer {
     background-color: #0077b6;

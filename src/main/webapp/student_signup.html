@@ -15,11 +15,19 @@
         <h3>DIÁK</h3>
         <form id="registerForm" action="javascript:void(0)" method="post"> <!-- Az űrlap a JavaScript segítségével fog adatokat kezelni -->
             <div class="form-group">
-                <label for="name">Felhasználónév:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="username">Felhasználónév:</label>
+                <input type="text" id="username" name="username" required>
             </div>
             <div class="form-group">
-                <label for="email">E-mail cím:</label>
+                <label for="lastName">Vezetéknév:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="firstName">Keresztnév:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
@@ -27,20 +35,44 @@
                 <input type="password" id="password" name="password" required>
             </div>
             <div class="form-group">
-                <label for="address">Cím:</label>
-                <input type="text" id="address" name="address" required>
+                <label for="phoneNumber">Telefonszám:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
             </div>
             <div class="form-group">
-                <label for="phone">Telefonszám:</label>
-                <input type="text" id="phone" name="phone" required>
+                <label for="birthDate">Születési dátum:</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Nem:</label>
+                <select id="gender" name="gender" required>
+                    <option value="férfi">Férfi</option>
+                    <option value="nő">Nő</option>
+                    <option value="egyéb">Egyéb</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="location">Cím:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="OMID">OM azonosító:</label>
+                <input type="text" id="OMID" name="OMID" required>
             </div>
             <div class="form-group">
                 <label for="schoolName">Iskola neve:</label>
                 <input type="text" id="schoolName" name="schoolName" required>
             </div>
             <div class="form-group">
-                <label for="omId">OM azonosító:</label>
-                <input type="text" id="omId" name="omId" required>
+                <label for="IKSZCoordinator">Iskola IKSZ koordinátora:</label>
+                <input type="text" id="IKSZCoordinator" name="IKSZCoordinator" required>
+            </div>
+            <div class="form-group">
+                <label for="coordinatorEmail">Koordinátor email címe:</label>
+                <input type="email" id="coordinatorEmail" name="coordinatorEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="coordinatorPhone">Koordinátor telefonszáma:</label>
+                <input type="text" id="coordinatorPhone" name="coordinatorPhone" required>
             </div>
             <button type="button" class="button" onclick="submitRegisterForm()">Regisztráció</button>
         </form>
@@ -51,23 +83,37 @@
 <script>
     function submitRegisterForm() {
         // Űrlap adatok begyűjtése
-        var name = document.getElementById('name').value;
+        var username = document.getElementById('username').value;
+        var lastName = document.getElementById('lastName').value;
+        var firstName = document.getElementById('firstName').value;
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
-        var address = document.getElementById('address').value;
-        var phone = document.getElementById('phone').value;
+        var phoneNumber = document.getElementById('phoneNumber').value;
+        var birthDate = document.getElementById('birthDate').value;
+        var gender = document.getElementById('gender').value;
+        var location = document.getElementById('location').value;
+        var OMID = document.getElementById('OMID').value;
         var schoolName = document.getElementById('schoolName').value;
-        var omId = document.getElementById('omId').value;
+        var IKSZCoordinator = document.getElementById('IKSZCoordinator').value;
+        var coordinatorEmail = document.getElementById('coordinatorEmail').value;
+        var coordinatorPhone = document.getElementById('coordinatorPhone').value;
 
         // JSON objektum létrehozása az adatokból
         var registerData = {
-            "name": name,
+            "username": username,
+            "lastName": lastName,
+            "firstName": firstName,
             "email": email,
             "password": password,
-            "address": address,
-            "phone": phone,
+            "phoneNumber": phoneNumber,
+            "birthDate": birthDate,
+            "gender": gender,
+            "location": location,
+            "OMID": OMID,
             "schoolName": schoolName,
-            "omId": omId
+            "IKSZCoordinator": IKSZCoordinator,
+            "coordinatorEmail": coordinatorEmail,
+            "coordinatorPhone": coordinatorPhone
         };
 
         // Fetch API használata az AJAX kérés elküldésére

@@ -1,71 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regisztráció</title>
-    <link rel="stylesheet" href="./css/employer_login.css"> <!-- A saját CSS stíluslapodhoz vezető link -->
+    <title>Bejelentkezés</title>
+    <link rel="stylesheet" href="css/institution_login.css">
 </head>
 <body>
 <div class="login-container">
     <div class="header">
-        <h2>Regisztráció</h2>
+        <h2>Bejelentkezés</h2>
     </div>
     <div class="inside-container">
-        <h3>MUNKÁLTATÓ</h3>
-        <form id="registerForm" action="javascript:void(0)" method="post"> <!-- Az űrlap a JavaScript segítségével fog adatokat kezelni -->
+        <h3>Intézmény</h3>
+        <form id="loginForm" action="javascript:void(0)" method="post">
             <div class="form-group">
                 <label for="name">Felhasználónév:</label>
                 <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-                <label for="email">E-mail cím:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
                 <label for="password">Jelszó:</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="button" class="button" onclick="submitRegisterForm()">Regisztráció</button>
+            <button type="button" class="button" onclick="submitLoginForm()"><b>Bejelentkezés</b></button>
         </form>
-        <p>Már van fiókod? <a href="employer_login.html">Jelentkezz be!</a></p> <!-- Bejelentkezési link -->
+        <p>Nincs még fiókod? <a href="institution_signup.html">Regisztrálj itt!</a></p>
     </div>
 </div>
 
 <script>
-    function submitRegisterForm() {
+    function submitLoginForm() {
         // Űrlap adatok begyűjtése
         var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
 
         // JSON objektum létrehozása az adatokból
-        var registerData = {
+        var loginData = {
             "name": name,
-            "email": email,
             "password": password
         };
 
         // Fetch API használata az AJAX kérés elküldésére
-        fetch('http://localhost:8080/signup', {
+        fetch('http://localhost:8080/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(registerData)
+            body: JSON.stringify(loginData)
         })
             .then(function(response) {
                 if (response.ok) {
-                    alert("Sikeres regisztráció.")
+                    alert("Sikeres bejelentkezés.");
                 }
                 throw new Error('Network response was not ok.');
             })
             .catch(function(error) {
-                // Sikertelen regisztráció esetén vagy hiba esetén
-                alert("Hiba történt a regisztráció során: " + error.message);
+                // Sikertelen bejelentkezés esetén vagy hiba esetén
+                alert("Hiba történt a bejelentkezés során: " + error.message);
             });
     }
 </script>
+
 </body>
 </html>
