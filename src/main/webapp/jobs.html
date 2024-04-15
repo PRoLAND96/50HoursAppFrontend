@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Közösségi Szolgálat Portál</title>
-    <link rel="stylesheet" href="./css/style.css"> <!-- Link a CSS stíluslapodhoz -->
+    <title>Diák Home Page</title>
+    <link rel="stylesheet" href="./css/student.css">
     <script>
-
         function fetchInstitutions() {
             fetch('http://localhost:8080/institutions')
                 .then(response => response.json())
@@ -25,8 +24,6 @@
                 name.textContent = `${institution.name}`;
                 name.classList.add('name');
                 listItem.appendChild(name);
-
-                
 
                 const type = document.createElement('p');
                 type.textContent = `${institution.type.name}`;
@@ -51,11 +48,11 @@
                 institutionList.appendChild(listItem);
             });
         }
+
         document.addEventListener('DOMContentLoaded', function() {
             fetchInstitutions();
-
-
         });
+
         function searchByType() {
             var input, filter, institutions, institution, type;
             input = document.getElementById("typeSearch");
@@ -80,30 +77,30 @@
     <h1>Közösségi Szolgálat Portál</h1>
     <nav>
         <ul>
-            <li><a href="home.html">Munkák</a></li>
-            <li><a href="about.html">Előrehaladás</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="student_home.html">Főoldal</a></li>
+            <li><a href="jobs.html">Munkák</a></li>
+            <li><a href="progress.html">Előrehaladás</a></li>
+            <li><a href="contact.html">Kapcsolat</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <div class="content">
-        <div class="job-list-content">
-            <div>
-                <label class="search" for="typeSearch">Search by Type:</label>
-                <input type="text" id="typeSearch" placeholder="Enter type...">
-                <button onclick="searchByType()">Search</button>
-            </div>
-            <ul class="job-cards" id="institutionList">
-                <!-- Institutions will be displayed here -->
-            </ul>
+    <h2>Üdvözöljük a közösségi szolgálat portálon!</h2>
+    <section>
+        <h3>Rendelkezésre álló munkalehetőségek</h3>
+        <!-- Munkalehetőségek listázása -->
+        <div>
+            <label class="search" for="typeSearch">Search by Type:</label>
+            <input type="text" id="typeSearch" placeholder="Enter type...">
+            <button onclick="searchByType()">Search</button>
         </div>
-    </div>
+        <ul class="job-cards" id="institutionList">
+            <!-- Institutions will be displayed here -->
+        </ul>
+    </section>
 </main>
 <footer>
     <p>&copy; 2024 Közösségi Szolgálat Portál</p>
 </footer>
-
-
 </body>
 </html>
