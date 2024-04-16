@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diák Home Page</title>
+    <link rel="stylesheet" href="../../../css/student.css">
+</head>
+<body onload="fetchInstitutions()">
+<header>
+    <h1>Közösségi Szolgálat Portál</h1>
+    <nav>
+        <ul>
+            <li><a href="../home/student_home.html">Főoldal</a></li>
+            <li class="currentp"><a href="../jobs/jobs.html">Munkák</a></li>
+            <li><a href="../progress/progress.html">Előrehaladás</a></li>
+            <li><a href="../contact/contacts.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2>Üdvözöljük a közösségi szolgálat portálon!</h2>
+    <section>
+        <h3>Rendelkezésre álló munkalehetőségek</h3>
+        <!-- Munkalehetőségek listázása -->
+        <div>
+            <label class="search" for="typeSearch">Search by Type:</label>
+            <input type="text" id="typeSearch" placeholder="Enter type...">
+            <button onclick="searchByType()">Search</button>
+        </div>
+        <ul class="job-cards" id="institutionList">
+            <!-- Institutions will be displayed here -->
+        </ul>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Közösségi Szolgálat Portál</p>
+</footer>
+<script src="jobs.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munkáltató Regisztráció</title>
+    <link rel="stylesheet" href="../../../css/institution_login.css">
+</head>
+<body>
+<div class="login-container">
+    <div class="header">
+        <h2>Regisztráció</h2>
+    </div>
+    <div class="inside-container">
+        <h3>Intézmény</h3>
+        <form id="registerForm" action="javascript:void(0)" method="post">
+            <div class="form-group">
+                <label for="name">Intézmény neve:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="type">Munkakör típusa:</label>
+                <select style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #c8d8e8;" id="type" name="type" required>
+                    <!-- Dinamikusan generált munkakör típusok -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="location">Cím:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="text">Leírás szövege:</label>
+                <textarea style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #c8d8e8;" id="text" name="text" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="links">Linkek:</label>
+                <input type="text" id="links" name="links" required>
+            </div>
+            <div class="form-group">
+                <label for="pictures">Képek:</label>
+                <input type="text" id="pictures" name="pictures" required>
+            </div>
+            <button type="button" class="button" onclick="submitRegisterForm()">Regisztráció</button>
+        </form>
+    </div>
+</div>
+<script src="institution_signup.js"></script>
+</body>
+</html>
