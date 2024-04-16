@@ -1,0 +1,106 @@
+{
+    "institutions": [
+        {
+            "id": 2,
+            "name": "TestInstitution",
+            "type": null,
+            "location": {
+             "id": 2,
+                "name": null,
+                "country": "Hungary",
+                "street": "Budapest",
+                "lat": 47.497913,
+                "lon": 19.040236
+            },
+            "contact": null,
+            "description": {
+                "id": 2,
+                "text": "This is a test Description for the purpose of testing this description",
+                "links": [
+                "https://outlook.office.com/mail/",
+                "https://www.youtube.com/watch?v=gEFM5EoE4x4"
+                ],
+                "pictures": []
+                }
+            }
+    ],
+
+    "users": [
+        {
+            "id": 3,
+            "username": "testuser2211",
+            "firstName" : "User3",
+            "lastName" : "User3",
+            "email": "testtestest@gmail.com",
+            "phoneNumber": "(+36) 232-1234",
+            "birthDate": "2024-03-11",
+            "gender": "f",
+            "password": "testpassword",
+            "coordinatorEmail": "TESTCOORDINATOR2@email.test",
+            "coordinatorPhone": "testcordphone2",
+            "roles": [
+              {
+                "id": 2,
+                "name": "USER"
+              },
+              {
+                "id": 1,
+                "name": "BACKOFFICE"
+              }
+            ],
+            "omid": "OMTEST2",
+            "schoolName" : "testSchool",
+            "ikszcoordinator": "TESTCOORDINATOR2",
+            "location" : {
+          
+            "name": "Example Location",
+            "country": "Hungary",
+            "street": "Nyíregyháza",
+            "lat": null, 
+            "lon": null
+            }
+        }
+    ],
+
+    "contracts": [
+        {
+            "id": 1,
+            "student": {
+            "id": 1,
+            "username": "user",
+            "firstName": "User",
+            "lastName": "User",
+            "email": "test@gmail.com",
+            "phoneNumber": "(+36) 232-2222",
+            "birthDate": "2024-04-12T16:04:36.763+00:00",
+            "gender": "m",
+            "password": "$2a$10$2a2CoQsrj6YneFDJ.aFEeOIY5pmpeR/Ij9BSy2sBaNOacovT4EmgK",
+            "coordinatorEmail": "TESTCOORDINATOR@email.test",
+            "coordinatorPhone": "testcordphone",
+            "preferedJobs": [],
+            "roles": [
+                {
+                "id": 2,
+                "name": "USER"
+                }
+            ],
+            "location": {
+                "id": 1,
+                "name": null,
+                "country": "Hungary",
+                "street": "Nyíregyháza",
+                "lat": 47.95539,
+                "lon": 21.71671
+            },
+            "schoolName" : "testSchool",
+            "omid": "OMTEST",
+            "ikszcoordinator": "TESTCOORDINATOR"
+            },
+            "institution": null,
+            "startDate": "2024-04-05",
+            "hours" : 0,
+            "endDate": "2024-10-05",
+            "completed": false
+        }
+    ]
+}
