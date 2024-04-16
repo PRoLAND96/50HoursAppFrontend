@@ -28,6 +28,20 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a:hover {
+    color: #0000CD;
+}
+
+.currentp{
+    padding: 5px;
+    border-radius: 0.6em;
+    background-color: #f4f4f4;
+}
+
+.currentp a{
+    color: #0077b6;
+}
+
 main {
     padding: 20px;
 }
