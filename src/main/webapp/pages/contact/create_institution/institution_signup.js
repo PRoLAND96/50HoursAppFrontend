@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('http://localhost:8080/jobTypes', {
+    fetch(apiURL + 'jobTypes', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ function submitRegisterForm() {
         }
     };
 
-    fetch('http://localhost:8080/institution', {
+    fetch(apiURL + 'institution', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

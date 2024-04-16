@@ -1,5 +1,5 @@
 function fetchInstitutions() {
-    fetch('http://localhost:8080/institutions')
+    fetch(apiURL + 'institutions')
         .then(response => response.json())
         .then(data => displayInstitutions(data))
         .catch(error => console.error('Error fetching institutions:', error));

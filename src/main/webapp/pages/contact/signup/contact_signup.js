@@ -16,7 +16,7 @@ function submitRegisterForm() {
         "phoneNumber": phoneNumber
     };
 
-    fetch('http://localhost:8080/signup', {
+    fetch(apiURL + 'signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

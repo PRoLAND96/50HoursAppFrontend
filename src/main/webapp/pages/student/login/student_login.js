@@ -9,13 +9,13 @@ $(document).ready(function() {
         // Send an AJAX request to the backend
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:8080/perform_login',
+            url: apiURL + 'perform_login',
             data: formData,
             success: function(response) {
                 // Assuming the response contains a 'redirectUrl' field
                 if (response === "Success") {
                     // Redirect to the specified URL
-                    window.location.href = "http://localhost:9090/50hours/student_home.html";
+                    window.location.href = "http://localhost:9090/50hours/pages/student/home/student_home.html";
                 } else {
                     // Handle login failure
                 }

@@ -43,7 +43,7 @@ function submitRegisterForm() {
     };
 
     // Fetch API használata az AJAX kérés elküldésére
-    fetch('http://localhost:8080/users/signup', {
+    fetch(apiURL + 'signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
