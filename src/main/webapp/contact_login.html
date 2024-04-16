@@ -49,12 +49,12 @@
                         window.location.href = "http://localhost:9090/50hours/contact_home.html";
                     } else {
                         // Handle login failure
-                        alert("Login failed. Please try again.");
                     }
                 },
                 error: function(xhr, status, error) {
                     // Handle error
                     console.error(xhr.responseText);
+                    alert("Login failed. Please try again.");
                 }
             });
         });
