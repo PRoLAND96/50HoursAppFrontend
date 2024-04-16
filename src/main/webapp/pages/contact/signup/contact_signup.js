@@ -16,15 +16,12 @@ function submitRegisterForm() {
         "phoneNumber": phoneNumber
     };
 
-    fetch(apiURL + 'signup', {
+    fetch(apiURL + 'users', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Origin': 'http://localhost:9090',
-            'X-CSRF-TOKEN': csrfToken // CSRF token in header
         },
-        body: JSON.stringify(registerData),
-        credentials: 'include'
+        body: JSON.stringify(registerData)
     })
         .then(function(response) {
             if (response.ok) {

@@ -18,7 +18,7 @@ function displayInstitutions(institutions) {
         listItem.appendChild(name);
 
         const type = document.createElement('p');
-        type.textContent = institution.type ? `${institution.type.name}` : 'N/A';
+        type.textContent = institution.type ? `${institution.type}` : 'ismeretlen';
         type.classList.add('type');
         listItem.appendChild(type);
 

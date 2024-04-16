@@ -1,24 +1,29 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch(apiURL + 'jobTypes', {
+    const jobTypeSelect = document.getElementById('type');
+    
+    if (!jobTypeSelect) {
+        console.error('jobType select element not found');
+        return;
+    }
+
+    fetch(apiURL + 'JobTypes', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
         }
     })
-        .then(response => response.json())
-        .then(data => {
-            const jobTypeSelect = document.getElementById('jobType');
-
-            data.forEach(jobType => {
-                const option = document.createElement('option');
-                option.value = jobType.name;
-                option.textContent = jobType.name;
-                jobTypeSelect.appendChild(option);
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching job types:', error);
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(jobType => {
+            const option = document.createElement('option');
+            option.value = jobType.name;
+            option.textContent = jobType.name;
+            jobTypeSelect.appendChild(option);
         });
+    })
+    .catch(error => {
+        console.error('Error fetching job types:', error);
+    });
 });
 
 function submitRegisterForm() {
@@ -40,20 +45,20 @@ function submitRegisterForm() {
         }
     };
 
-    fetch(apiURL + 'institution', {
+    fetch(apiURL + 'institutions', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(registerData)
     })
-        .then(function(response) {
-            if (response.ok) {
-                alert("Sikeres regisztráció.")
-            }
-            throw new Error('Network response was not ok.');
-        })
-        .catch(function(error) {
-            alert("Hiba történt a regisztráció során: " + error.message);
-        });
+    .then(function(response) {
+        if (response.ok) {
+            alert("Sikeres regisztráció.")
+        }
+        throw new Error('Network response was not ok.');
+    })
+    .catch(function(error) {
+        alert("Hiba történt a regisztráció során: " + error.message);
+    });
 }

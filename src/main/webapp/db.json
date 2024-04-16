@@ -1,108 +1,242 @@
 {
-    "institutions": [
+  "institutions": [
+    {
+      "id": "2",
+      "name": "TestInstitution",
+      "type": "TestType",
+      "location": {
+        "id": 2,
+        "name": null,
+        "country": "Hungary",
+        "street": "Budapest",
+        "lat": 47.497913,
+        "lon": 19.040236
+      },
+      "contact": null,
+      "description": {
+        "id": 2,
+        "text": "This is a test Description for the purpose of testing this description",
+        "links": [
+          "https://outlook.office.com/mail/",
+          "https://www.youtube.com/watch?v=gEFM5EoE4x4"
+        ],
+        "pictures": []
+      }
+    },
+    {
+      "id": "26",
+      "name": "faszkivan",
+      "type": "fasz",
+      "location": {
+        "id": 2,
+        "name": null,
+        "country": "Hungary",
+        "street": "Budapest",
+        "lat": 43,
+        "lon": 23
+      },
+      "contact": null,
+      "description": {
+        "id": 33,
+        "text": "This is a test Description for the purpose of testing this description",
+        "links": [
+          "https://outlook.office.com/mail/",
+          "https://www.youtube.com/watch?v=gEFM5EoE4x4"
+        ],
+        "pictures": []
+      }
+    },
+    {
+      "id": "9fcd",
+      "name": "asd",
+      "type": "1",
+      "location": "sad",
+      "description": {
+        "text": "asda",
+        "links": [
+          "sadas"
+        ],
+        "pictures": [
+          "asd"
+        ]
+      }
+    },
+    {
+      "id": "ddfc",
+      "name": "fasdas",
+      "type": "4",
+      "location": "asdasd",
+      "description": {
+        "text": "asdasd",
+        "links": [
+          "asdasd"
+        ],
+        "pictures": [
+          "asdasd"
+        ]
+      }
+    },
+    {
+      "id": "205b",
+      "name": "asd",
+      "type": "Grafikus",
+      "location": "asd",
+      "description": {
+        "text": "asd",
+        "links": [
+          "asd"
+        ],
+        "pictures": [
+          "asd"
+        ]
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": "3",
+      "username": "testuser2211",
+      "firstName": "User3",
+      "lastName": "User3",
+      "email": "testtestest@gmail.com",
+      "phoneNumber": "(+36) 232-1234",
+      "birthDate": "2024-03-11",
+      "gender": "f",
+      "password": "testpassword",
+      "coordinatorEmail": "TESTCOORDINATOR2@email.test",
+      "coordinatorPhone": "testcordphone2",
+      "roles": [
         {
+          "id": 2,
+          "name": "USER"
+        },
+        {
+          "id": 1,
+          "name": "BACKOFFICE"
+        }
+      ],
+      "omid": "OMTEST2",
+      "schoolName": "testSchool",
+      "ikszcoordinator": "TESTCOORDINATOR2",
+      "location": {
+        "name": "Example Location",
+        "country": "Hungary",
+        "street": "Nyíregyháza",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "id": "f7bf",
+      "username": "sad",
+      "lastName": "sad",
+      "firstName": "sad",
+      "email": "sad",
+      "password": "sad",
+      "phoneNumber": "213123"
+    },
+    {
+      "id": "0078",
+      "username": "sad",
+      "lastName": "sad",
+      "firstName": "sad",
+      "email": "sad",
+      "password": "sad",
+      "phoneNumber": "213123"
+    },
+    {
+      "id": "7c7a",
+      "username": "sad",
+      "lastName": "sad",
+      "firstName": "sad",
+      "email": "sad",
+      "password": "sad",
+      "phoneNumber": "213123"
+    },
+    {
+      "id": "2b99",
+      "username": "asd",
+      "lastName": "asd",
+      "firstName": "asd",
+      "email": "asd",
+      "password": "asd",
+      "phoneNumber": "asd",
+      "birthDate": "2000-11-11",
+      "gender": "F",
+      "location": {
+        "street": "Petőfi",
+        "name": "Nyíribrony",
+        "country": "Magyarország"
+      },
+      "OMID": "213123",
+      "schoolName": "asdasd",
+      "IKSZCoordinator": "asd",
+      "coordinatorEmail": "asd",
+      "coordinatorPhone": "1231"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "1",
+      "student": {
+        "id": 1,
+        "username": "user",
+        "firstName": "User",
+        "lastName": "User",
+        "email": "test@gmail.com",
+        "phoneNumber": "(+36) 232-2222",
+        "birthDate": "2024-04-12T16:04:36.763+00:00",
+        "gender": "m",
+        "password": "$2a$10$2a2CoQsrj6YneFDJ.aFEeOIY5pmpeR/Ij9BSy2sBaNOacovT4EmgK",
+        "coordinatorEmail": "TESTCOORDINATOR@email.test",
+        "coordinatorPhone": "testcordphone",
+        "preferedJobs": [],
+        "roles": [
+          {
             "id": 2,
-            "name": "TestInstitution",
-            "type": null,
-            "location": {
-             "id": 2,
-                "name": null,
-                "country": "Hungary",
-                "street": "Budapest",
-                "lat": 47.497913,
-                "lon": 19.040236
-            },
-            "contact": null,
-            "description": {
-                "id": 2,
-                "text": "This is a test Description for the purpose of testing this description",
-                "links": [
-                "https://outlook.office.com/mail/",
-                "https://www.youtube.com/watch?v=gEFM5EoE4x4"
-                ],
-                "pictures": []
-                }
-            }
-    ],
-
-    "users": [
-        {
-            "id": 3,
-            "username": "testuser2211",
-            "firstName" : "User3",
-            "lastName" : "User3",
-            "email": "testtestest@gmail.com",
-            "phoneNumber": "(+36) 232-1234",
-            "birthDate": "2024-03-11",
-            "gender": "f",
-            "password": "testpassword",
-            "coordinatorEmail": "TESTCOORDINATOR2@email.test",
-            "coordinatorPhone": "testcordphone2",
-            "roles": [
-              {
-                "id": 2,
-                "name": "USER"
-              },
-              {
-                "id": 1,
-                "name": "BACKOFFICE"
-              }
-            ],
-            "omid": "OMTEST2",
-            "schoolName" : "testSchool",
-            "ikszcoordinator": "TESTCOORDINATOR2",
-            "location" : {
-          
-            "name": "Example Location",
-            "country": "Hungary",
-            "street": "Nyíregyháza",
-            "lat": null, 
-            "lon": null
-            }
-        }
-    ],
-
-    "contracts": [
-        {
-            "id": 1,
-            "student": {
-            "id": 1,
-            "username": "user",
-            "firstName": "User",
-            "lastName": "User",
-            "email": "test@gmail.com",
-            "phoneNumber": "(+36) 232-2222",
-            "birthDate": "2024-04-12T16:04:36.763+00:00",
-            "gender": "m",
-            "password": "$2a$10$2a2CoQsrj6YneFDJ.aFEeOIY5pmpeR/Ij9BSy2sBaNOacovT4EmgK",
-            "coordinatorEmail": "TESTCOORDINATOR@email.test",
-            "coordinatorPhone": "testcordphone",
-            "preferedJobs": [],
-            "roles": [
-                {
-                "id": 2,
-                "name": "USER"
-                }
-            ],
-            "location": {
-                "id": 1,
-                "name": null,
-                "country": "Hungary",
-                "street": "Nyíregyháza",
-                "lat": 47.95539,
-                "lon": 21.71671
-            },
-            "schoolName" : "testSchool",
-            "omid": "OMTEST",
-            "ikszcoordinator": "TESTCOORDINATOR"
-            },
-            "institution": null,
-            "startDate": "2024-04-05",
-            "hours" : 0,
-            "endDate": "2024-10-05",
-            "completed": false
-        }
-    ],
-    "perform_login":[
-    ]
+            "name": "USER"
+          }
+        ],
+        "location": {
+          "id": 1,
+          "name": null,
+          "country": "Hungary",
+          "street": "Nyíregyháza",
+          "lat": 47.95539,
+          "lon": 21.71671
+        },
+        "schoolName": "testSchool",
+        "omid": "OMTEST",
+        "ikszcoordinator": "TESTCOORDINATOR"
+      },
+      "institution": null,
+      "startDate": "2024-04-05",
+      "hours": 0,
+      "endDate": "2024-10-05",
+      "completed": false
+    }
+  ],
+  "perform_login": [],
+  "JobTypes": [
+    {
+      "id": "1",
+      "name": "Tanulmányi segéd"
+    },
+    {
+      "id": "2",
+      "name": "Programozó"
+    },
+    {
+      "id": "3",
+      "name": "Grafikus"
+    },
+    {
+      "id": "4",
+      "name": "Kommunikációs szakértő"
+    },
+    {
+      "id": "5",
+      "name": "Ügyfélszolgálati munkatárs"
+    }
+  ]
 }

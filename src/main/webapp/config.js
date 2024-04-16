@@ -4,9 +4,4 @@ const urlMock = "http://localhost:3000/";
 
 const isMock = true;
 
-var apiUrl;
-if (isMock) {
-    apiUrl = urlMock;
-} else{
-    apiUrl = urlBE;
-}
+const apiURL = isMock ? urlMock : urlBE;

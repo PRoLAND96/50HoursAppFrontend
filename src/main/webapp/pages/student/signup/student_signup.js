@@ -1,6 +1,5 @@
 
 function submitRegisterForm() {
-    // Űrlap adatok begyűjtése
     var username = document.getElementById('username').value;
     var lastName = document.getElementById('lastName').value;
     var firstName = document.getElementById('firstName').value;
@@ -43,24 +42,20 @@ function submitRegisterForm() {
     };
 
     // Fetch API használata az AJAX kérés elküldésére
-    fetch(apiURL + 'signup', {
+    fetch(apiURL + 'users', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(registerData)
     })
-        .then(function(response) {
-            if (response.ok) {
-                return response.json();
-            }
-            throw new Error('Network response was not ok.');
-        })
-        .then(function(data) {
-            alert("Sikeres regisztráció.");
-        })
-        .catch(function(error) {
-            // Sikertelen regisztráció esetén vagy hiba esetén
-            alert("Hiba történt a regisztráció során: " + error.message);
-        });
+    .then(function(response) {
+        if (response.ok) {
+            alert("Sikeres regisztráció.")
+        }
+        throw new Error('Network response was not ok.');
+    })
+    .catch(function(error) {
+        alert("Hiba történt a regisztráció során: " + error.message);
+    });
 }
