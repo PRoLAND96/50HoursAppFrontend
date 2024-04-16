@@ -18,12 +18,12 @@ function displayInstitutions(institutions) {
         listItem.appendChild(name);
 
         const type = document.createElement('p');
-        type.textContent = `${institution.type.name}`;
+        type.textContent = institution.type ? `${institution.type.name}` : 'N/A';
         type.classList.add('type');
         listItem.appendChild(type);
 
         const location = document.createElement('p');
-        location.textContent = `${institution.location}`;
+        location.textContent = institution.location ? `${institution.location.country}, ${institution.location.street}` : 'N/A';
         location.classList.add('location');
         listItem.appendChild(location);
 

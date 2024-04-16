@@ -1,30 +1,25 @@
-$(document).ready(function() {
-    $('#loginForm').submit(function(event) {
-        // Prevent the default form submission behavior
-        event.preventDefault();
+function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
-        // Serialize the form data
-        var formData = $(this).serialize();
-
-        // Send an AJAX request to the backend
-        $.ajax({
-            type: 'POST',
-            url: apiURL + 'perform_login',
-            data: formData,
-            success: function(response) {
-                // Assuming the response contains a 'redirectUrl' field
-                if (response === "Success") {
-                    // Redirect to the specified URL
-                    window.location.href = "http://localhost:9090/50hours/pages/student/home/student_home.html";
-                } else {
-                    // Handle login failure
-                }
-            },
-            error: function(xhr, status, error) {
-                // Handle error
-                console.error(xhr.responseText);
-                alert("Login failed. Please try again.");
-            }
-        });
+    fetch(apiURL + 'perform_login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            username: username,
+            password: password
+        })
+    })
+    .then(response => {
+        if (!response.ok) {
+            //throw new Error('Hiba történt a kérés során.');
+        window.location.href = 'http://localhost:9090/50hours/pages/contact/home/contact_home.html';
+        }
+    })
+    .catch(error => {
+        console.error('Hiba:', error);
+        alert('Hiba történt a bejelentkezés során.');
     });
-});
+}
