@@ -23,7 +23,9 @@ function displayInstitutions(institutions) {
         listItem.appendChild(type);
 
         const location = document.createElement('p');
-        location.textContent = institution.location ? `${institution.location.country}, ${institution.location.street}` : 'N/A';
+        location.textContent = institution.location ? 
+                               `${institution.location.country}, ${institution.location.street}` : 
+                               'N/A';
         location.classList.add('location');
         listItem.appendChild(location);
 

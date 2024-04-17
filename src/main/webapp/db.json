@@ -46,48 +46,124 @@
         "pictures": []
       }
     },
+      {
+        "id": "c984",
+        "name": "Szegedi Tudományegyetem",
+        "type": "Informatika",
+        "location": {
+          "street": "Dugonics tér",
+          "name": "Szeged",
+          "country": "Magyarország"
+        },
+        "description": {
+          "text": "Informatikai képzés, programozói specializáció\nSzükséges programozástudás:\nJava, Python, SQL",
+          "links": [
+            "https://www.u-szeged.hu"
+          ],
+          "pictures": []
+        }
+      },
+      {
+        "id": "c985",
+        "name": "Budapesti Műszaki és Gazdaságtudományi Egyetem",
+        "type": "Mérnöki",
+        "location": {
+          "street": "Műegyetem rkp.",
+          "name": "Budapest",
+          "country": "Magyarország"
+        },
+        "description": {
+          "text": "Mérnöki képzés, informatikai specializáció\nSzükséges programozástudás:\nC++, C#, Matlab",
+          "links": [
+            "https://www.bme.hu"
+          ],
+          "pictures": []
+        }
+      },
+      {
+        "id": "c986",
+        "name": "Pécsi Tudományegyetem",
+        "type": "Orvostudomány",
+        "location": {
+          "street": "Szigeti út",
+          "name": "Pécs",
+          "country": "Magyarország"
+        },
+        "description": {
+          "text": "Orvostudományi képzés, általános orvosi specializáció\nSzükséges előképzettség:\nBiológia, Kémia",
+          "links": [
+            "https://www.pte.hu"
+          ],
+          "pictures": []
+        }
+      },
+      {
+        "id": "c987",
+        "name": "Eötvös Loránd Tudományegyetem",
+        "type": "Természettudomány",
+        "location": {
+          "street": "Pázmány Péter sétány",
+          "name": "Budapest",
+          "country": "Magyarország"
+        },
+        "description": {
+          "text": "Természettudományi képzés, biológiai specializáció\nSzükséges előképzettség:\nBiológia, Kémia",
+          "links": [
+            "https://www.elte.hu"
+          ],
+          "pictures": []
+        }
+      },
+      {
+        "id": "c988",
+        "name": "Óbudai Egyetem",
+        "type": "Gazdaságtudomány",
+        "location": {
+          "street": "Bécsi út",
+          "name": "Budapest",
+          "country": "Magyarország"
+        },
+        "description": {
+          "text": "Gazdaságtudományi képzés, üzleti informatikai specializáció\nSzükséges előképzettség:\nGazdaságtan, Informatika",
+          "links": [
+            "https://www.uni-obuda.hu"
+          ],
+          "pictures": []
+        }
+      },
+      {
+        "id": "c989",
+        "name": "Debreceni Egyetem",
+        "type": "Művészet",
+        "location": {
+          "street": "Egyetem tér",
+          "name": "Debrecen",
+          "country": "Magyarország"
+        },
+        "description": {
+          "text": "Művészeti képzés, festői specializáció\nSzükséges előképzettség:\nMűvészettörténet, Rajz",
+          "links": [
+            "https://www.unideb.hu"
+          ],
+          "pictures": []
+        }
+      },  
     {
-      "id": "9fcd",
-      "name": "asd",
-      "type": "1",
-      "location": "sad",
+      "id": "c983",
+      "name": "Debrecen Informatika kar",
+      "type": "Programozó",
+      "location": {
+        "street": "Kassai",
+        "name": "Debrecen",
+        "country": "Magyarország"
+      },
       "description": {
-        "text": "asda",
+        "text": "Frontend programozói lehetőség\nSzükséges programozástudás:\nJavascript, HTML, CSS",
         "links": [
-          "sadas"
+          "https://inf.unideb.hu"
         ],
         "pictures": [
-          "asd"
-        ]
-      }
-    },
-    {
-      "id": "ddfc",
-      "name": "fasdas",
-      "type": "4",
-      "location": "asdasd",
-      "description": {
-        "text": "asdasd",
-        "links": [
-          "asdasd"
-        ],
-        "pictures": [
-          "asdasd"
-        ]
-      }
-    },
-    {
-      "id": "205b",
-      "name": "asd",
-      "type": "Grafikus",
-      "location": "asd",
-      "description": {
-        "text": "asd",
-        "links": [
-          "asd"
-        ],
-        "pictures": [
-          "asd"
+          ""
         ]
       }
     }
@@ -119,9 +195,9 @@
       "schoolName": "testSchool",
       "ikszcoordinator": "TESTCOORDINATOR2",
       "location": {
-        "name": "Example Location",
-        "country": "Hungary",
-        "street": "Nyíregyháza",
+        "name": "Nyíregyháza",
+        "country": "Magyarország",
+        "street": "Bocskai utca",
         "lat": null,
         "lon": null
       }
@@ -173,6 +249,126 @@
       "IKSZCoordinator": "asd",
       "coordinatorEmail": "asd",
       "coordinatorPhone": "1231"
+    },
+    {
+      "id": "4",
+      "username": "john_doe123",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phoneNumber": "(+36) 123-4567",
+      "birthDate": "2000-05-15",
+      "gender": "m",
+      "password": "password123",
+      "coordinatorEmail": "john.coordinator@example.com",
+      "coordinatorPhone": "1234567",
+      "roles": [
+        {
+          "id": 2,
+          "name": "USER"
+        },
+        {
+          "id": 1,
+          "name": "BACKOFFICE"
+        }
+      ],
+      "omid": "OMID123",
+      "schoolName": "Example High School",
+      "ikszcoordinator": "John Coordinator",
+      "location": {
+        "name": "Budapest",
+        "country": "Hungary",
+        "street": "Main Street",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "id": "5",
+      "username": "jane_smith456",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@example.com",
+      "phoneNumber": "(+36) 765-4321",
+      "birthDate": "1998-08-20",
+      "gender": "f",
+      "password": "pass1234",
+      "coordinatorEmail": "jane.coordinator@example.com",
+      "coordinatorPhone": "7654321",
+      "roles": [
+        {
+          "id": 2,
+          "name": "USER"
+        }
+      ],
+      "omid": "OMID456",
+      "schoolName": "Example University",
+      "ikszcoordinator": "Jane Coordinator",
+      "location": {
+        "name": "Debrecen",
+        "country": "Hungary",
+        "street": "Hunyadi Street",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "id": "6",
+      "username": "alice_wonder789",
+      "firstName": "Alice",
+      "lastName": "Wonder",
+      "email": "alice.wonder@example.com",
+      "phoneNumber": "(+36) 987-6543",
+      "birthDate": "2002-11-25",
+      "gender": "f",
+      "password": "qwerty123",
+      "coordinatorEmail": "alice.coordinator@example.com",
+      "coordinatorPhone": "9876543",
+      "roles": [
+        {
+          "id": 2,
+          "name": "USER"
+        }
+      ],
+      "omid": "OMID789",
+      "schoolName": "Wonder School",
+      "ikszcoordinator": "Alice Coordinator",
+      "location": {
+        "name": "Szeged",
+        "country": "Hungary",
+        "street": "Kossuth Street",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "id": "7",
+      "username": "bob_brown012",
+      "firstName": "Bob",
+      "lastName": "Brown",
+      "email": "bob.brown@example.com",
+      "phoneNumber": "(+36) 111-2222",
+      "birthDate": "1995-04-10",
+      "gender": "m",
+      "password": "pass4321",
+      "coordinatorEmail": "bob.coordinator@example.com",
+      "coordinatorPhone": "1112222",
+      "roles": [
+        {
+          "id": 2,
+          "name": "USER"
+        }
+      ],
+      "omid": "OMID012",
+      "schoolName": "Brown School",
+      "ikszcoordinator": "Bob Coordinator",
+      "location": {
+        "name": "Miskolc",
+        "country": "Hungary",
+        "street": "Széchenyi Street",
+        "lat": null,
+        "lon": null
+      }
     }
   ],
   "contracts": [
@@ -209,9 +405,9 @@
         "omid": "OMTEST",
         "ikszcoordinator": "TESTCOORDINATOR"
       },
-      "institution": null,
+      "institution": "c983",
       "startDate": "2024-04-05",
-      "hours": 0,
+      "hours": 32,
       "endDate": "2024-10-05",
       "completed": false
     }

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diák Home Page</title>
     <link rel="stylesheet" href="../../../css/student.css">
+    <link rel="stylesheet" href="student_home.css">
 </head>
-<body onload="fetchInstitutions()">
+<body onload="fetchUserData()">
 <header>
     <h1>Közösségi Szolgálat Portál</h1>
     <nav>
@@ -22,14 +23,30 @@
     <h2>Üdvözöljük a közösségi szolgálat portálon!</h2>
     <section>
         <h3>Személyes adatok</h3>
-        <!-- Diák adatainak megjelenítése -->
-        <p>Diák neve: Példa Diák</p>
-        <p>Osztály: 10.A</p>
-        <p>Email: pelda.diak@example.com</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <p><b>Felhasználónév:</b> <span id="username"></span></p>
+                <p><b>Név: </b><span id="name"></span></p>
+                <p><b>Születési dátum: </b><span id="birthDate"></span></p>
+                <p><b>Email-cím: </b><span id="email"></span></p>
+                <p><b>Telefonszám: </b><span id="phoneNumber"></span></p>
+            </div>
+            <div class="grid-item">
+                <p><b>IKSZ Koordinátor: </b><span id="ikszCoordinator"></span></p>
+                <p><b>OM azonosító: </b><span id="omid"></span></p>
+                <p><b>Cím: </b><span id="address"></span></p>
+                <p><b>Koordinátor email: </b><span id="coordinatorEmail"></span></p>
+                <p><b>Koordinátor telefonszáma: </b><span id="coordinatorPhone"></span></p>
+            </div>
+        </div>
+        
+
     </section>
 </main>
 <footer>
     <p>&copy; 2024 Közösségi Szolgálat Portál</p>
 </footer>
+<script src="../../../config.js"></script>
+<script src="student_home.js"></script>
 </body>
 </html>
