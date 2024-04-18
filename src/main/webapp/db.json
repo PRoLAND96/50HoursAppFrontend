@@ -46,108 +46,108 @@
         "pictures": []
       }
     },
-      {
-        "id": "c984",
-        "name": "Szegedi Tudományegyetem",
-        "type": "Informatika",
-        "location": {
-          "street": "Dugonics tér",
-          "name": "Szeged",
-          "country": "Magyarország"
-        },
-        "description": {
-          "text": "Informatikai képzés, programozói specializáció\nSzükséges programozástudás:\nJava, Python, SQL",
-          "links": [
-            "https://www.u-szeged.hu"
-          ],
-          "pictures": []
-        }
+    {
+      "id": "c984",
+      "name": "Szegedi Tudományegyetem",
+      "type": "Informatika",
+      "location": {
+        "street": "Dugonics tér",
+        "name": "Szeged",
+        "country": "Magyarország"
       },
-      {
-        "id": "c985",
-        "name": "Budapesti Műszaki és Gazdaságtudományi Egyetem",
-        "type": "Mérnöki",
-        "location": {
-          "street": "Műegyetem rkp.",
-          "name": "Budapest",
-          "country": "Magyarország"
-        },
-        "description": {
-          "text": "Mérnöki képzés, informatikai specializáció\nSzükséges programozástudás:\nC++, C#, Matlab",
-          "links": [
-            "https://www.bme.hu"
-          ],
-          "pictures": []
-        }
+      "description": {
+        "text": "Informatikai képzés, programozói specializáció\nSzükséges programozástudás:\nJava, Python, SQL",
+        "links": [
+          "https://www.u-szeged.hu"
+        ],
+        "pictures": []
+      }
+    },
+    {
+      "id": "c985",
+      "name": "Budapesti Műszaki és Gazdaságtudományi Egyetem",
+      "type": "Mérnöki",
+      "location": {
+        "street": "Műegyetem rkp.",
+        "name": "Budapest",
+        "country": "Magyarország"
       },
-      {
-        "id": "c986",
-        "name": "Pécsi Tudományegyetem",
-        "type": "Orvostudomány",
-        "location": {
-          "street": "Szigeti út",
-          "name": "Pécs",
-          "country": "Magyarország"
-        },
-        "description": {
-          "text": "Orvostudományi képzés, általános orvosi specializáció\nSzükséges előképzettség:\nBiológia, Kémia",
-          "links": [
-            "https://www.pte.hu"
-          ],
-          "pictures": []
-        }
+      "description": {
+        "text": "Mérnöki képzés, informatikai specializáció\nSzükséges programozástudás:\nC++, C#, Matlab",
+        "links": [
+          "https://www.bme.hu"
+        ],
+        "pictures": []
+      }
+    },
+    {
+      "id": "c986",
+      "name": "Pécsi Tudományegyetem",
+      "type": "Orvostudomány",
+      "location": {
+        "street": "Szigeti út",
+        "name": "Pécs",
+        "country": "Magyarország"
       },
-      {
-        "id": "c987",
-        "name": "Eötvös Loránd Tudományegyetem",
-        "type": "Természettudomány",
-        "location": {
-          "street": "Pázmány Péter sétány",
-          "name": "Budapest",
-          "country": "Magyarország"
-        },
-        "description": {
-          "text": "Természettudományi képzés, biológiai specializáció\nSzükséges előképzettség:\nBiológia, Kémia",
-          "links": [
-            "https://www.elte.hu"
-          ],
-          "pictures": []
-        }
+      "description": {
+        "text": "Orvostudományi képzés, általános orvosi specializáció\nSzükséges előképzettség:\nBiológia, Kémia",
+        "links": [
+          "https://www.pte.hu"
+        ],
+        "pictures": []
+      }
+    },
+    {
+      "id": "c987",
+      "name": "Eötvös Loránd Tudományegyetem",
+      "type": "Természettudomány",
+      "location": {
+        "street": "Pázmány Péter sétány",
+        "name": "Budapest",
+        "country": "Magyarország"
       },
-      {
-        "id": "c988",
-        "name": "Óbudai Egyetem",
-        "type": "Gazdaságtudomány",
-        "location": {
-          "street": "Bécsi út",
-          "name": "Budapest",
-          "country": "Magyarország"
-        },
-        "description": {
-          "text": "Gazdaságtudományi képzés, üzleti informatikai specializáció\nSzükséges előképzettség:\nGazdaságtan, Informatika",
-          "links": [
-            "https://www.uni-obuda.hu"
-          ],
-          "pictures": []
-        }
+      "description": {
+        "text": "Természettudományi képzés, biológiai specializáció\nSzükséges előképzettség:\nBiológia, Kémia",
+        "links": [
+          "https://www.elte.hu"
+        ],
+        "pictures": []
+      }
+    },
+    {
+      "id": "c988",
+      "name": "Óbudai Egyetem",
+      "type": "Gazdaságtudomány",
+      "location": {
+        "street": "Bécsi út",
+        "name": "Budapest",
+        "country": "Magyarország"
       },
-      {
-        "id": "c989",
-        "name": "Debreceni Egyetem",
-        "type": "Művészet",
-        "location": {
-          "street": "Egyetem tér",
-          "name": "Debrecen",
-          "country": "Magyarország"
-        },
-        "description": {
-          "text": "Művészeti képzés, festői specializáció\nSzükséges előképzettség:\nMűvészettörténet, Rajz",
-          "links": [
-            "https://www.unideb.hu"
-          ],
-          "pictures": []
-        }
-      },  
+      "description": {
+        "text": "Gazdaságtudományi képzés, üzleti informatikai specializáció\nSzükséges előképzettség:\nGazdaságtan, Informatika",
+        "links": [
+          "https://www.uni-obuda.hu"
+        ],
+        "pictures": []
+      }
+    },
+    {
+      "id": "c989",
+      "name": "Debreceni Egyetem",
+      "type": "Művészet",
+      "location": {
+        "street": "Egyetem tér",
+        "name": "Debrecen",
+        "country": "Magyarország"
+      },
+      "description": {
+        "text": "Művészeti képzés, festői specializáció\nSzükséges előképzettség:\nMűvészettörténet, Rajz",
+        "links": [
+          "https://www.unideb.hu"
+        ],
+        "pictures": []
+      }
+    },
     {
       "id": "c983",
       "name": "Debrecen Informatika kar",
@@ -369,6 +369,48 @@
         "lat": null,
         "lon": null
       }
+    },
+    {
+      "id": "4594",
+      "username": "alice_walker013",
+      "lastName": "Alice",
+      "firstName": "Walker",
+      "email": "alice.walker@example.com",
+      "password": "pass1234",
+      "phoneNumber": "(+36) 333-4444",
+      "birthDate": "1998-07-15",
+      "gender": "N",
+      "location": {
+        "street": "Arany János utca",
+        "name": "Szeged",
+        "country": "Hungary"
+      },
+      "OMID": "OMID013",
+      "schoolName": "Walker School",
+      "IKSZCoordinator": "Alice Coordinator",
+      "coordinatorEmail": "alice.coordinator@example.com",
+      "coordinatorPhone": "3334444"
+    },
+    {
+      "id": "6201",
+      "username": "PRoland",
+      "lastName": "Pető",
+      "firstName": "Roland",
+      "email": "petoroli2001@gmail.com",
+      "password": "PRoland",
+      "phoneNumber": "06705423442",
+      "birthDate": "2001-09-06",
+      "gender": "F",
+      "location": {
+        "street": "Petőfi utca 64.",
+        "name": "Nyíribrony",
+        "country": "Magyarország"
+      },
+      "OMID": "71628480440",
+      "schoolName": "Debreceni Egyetem",
+      "IKSZCoordinator": "Józsika",
+      "coordinatorEmail": "jozsika@gmail.com",
+      "coordinatorPhone": "06204325423"
     }
   ],
   "contracts": [
