@@ -42,7 +42,7 @@ function submitRegisterForm() {
     };
 
     // Fetch API használata az AJAX kérés elküldésére
-    fetch(apiURL + 'users', {
+    fetch(apiURL + 'currentUser', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -415,6 +415,35 @@
   ],
   "contracts": [
     {
+      "id": "2",
+      "student": {
+        "id": "6201",
+        "username": "PRoland",
+        "lastName": "Pető",
+        "firstName": "Roland",
+        "email": "petoroli2001@gmail.com",
+        "password": "PRoland",
+        "phoneNumber": "06705423442",
+        "birthDate": "2001-09-06",
+        "gender": "F",
+        "location": {
+          "street": "Petőfi utca 64.",
+          "name": "Nyíribrony",
+          "country": "Magyarország"
+        },
+        "OMID": "71628480440",
+        "schoolName": "Debreceni Egyetem",
+        "IKSZCoordinator": "Józsika",
+        "coordinatorEmail": "jozsika@gmail.com",
+        "coordinatorPhone": "06204325423"
+      },
+      "institution": "c989",
+      "startDate": "2021-07-24",
+      "hours": 42,
+      "endDate": "2024-10-05",
+      "completed": false
+    },
+    {
       "id": "1",
       "student": {
         "id": 1,
@@ -475,6 +504,32 @@
     {
       "id": "5",
       "name": "Ügyfélszolgálati munkatárs"
+    }
+  ],
+  "currentUser": [
+    {
+      "id": "cc0d",
+      "currentUser": "2b99"
+    },
+    {
+      "id": "4951",
+      "currentUser": "6201"
+    },
+    {
+      "id": "4d5d",
+      "currentUser": "2b99"
+    },
+    {
+      "id": "3298",
+      "currentUser": "6201"
+    },
+    {
+      "id": "db3b",
+      "currentUser": "2b99"
+    },
+    {
+      "id": "2832",
+      "currentUser": "6201"
     }
   ]
 }

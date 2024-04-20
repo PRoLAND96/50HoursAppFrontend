@@ -1,4 +1,4 @@
-function displayStudentData(contracts, institutions) {
+function displayStudentData(contracts, institutions, currentUserID) {
     var totalHours = 0;
     var institutionName = 'N/A';
     var startDate = 'N/A';
@@ -6,7 +6,7 @@ function displayStudentData(contracts, institutions) {
     var status = 'N/A';
 
     contracts.forEach(contract => {
-        if (contract.student.id === 1) {
+        if (contract.student.id === currentUserID) {
             totalHours += contract.hours;
 
             const institution = findInstitutionById(institutions, contract.institution);
@@ -31,7 +31,6 @@ function displayStudentData(contracts, institutions) {
     statusElement.className = status;  // osztály beállítása a státusz alapján
 }
 
-
 function findInstitutionById(institutions, institutionId) {
     return institutions.find(institution => institution.id === institutionId);
 }
@@ -41,12 +40,16 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function fetchStudentData() {
-    Promise.all([
-        fetch(apiURL + 'contracts').then(response => response.json()),
-        fetch(apiURL + 'institutions').then(response => response.json())
-    ])
-    .then(([contracts, institutions]) => {
-        displayStudentData(contracts, institutions);
-    })
-    .catch(error => console.error('Error fetching data:', error));
+    getCurrentUserID()
+      .then(currentUserID => {
+        Promise.all([
+            fetch(apiURL + 'contracts').then(response => response.json()),
+            fetch(apiURL + 'institutions').then(response => response.json())
+        ])
+        .then(([contracts, institutions]) => {
+            displayStudentData(contracts, institutions, currentUserID);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+      })
+      .catch(error => console.error('Error getting current user ID:', error));
 }

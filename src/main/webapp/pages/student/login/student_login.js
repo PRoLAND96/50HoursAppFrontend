@@ -1,14 +1,34 @@
+function saveCurrentUserToDB(currentUser) {
+    const data = { currentUser };
+    console.log('Sending data to server:', data);
+  
+    fetch(apiURL + 'currentUser', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+      .then(response => response.json())
+      .then(result => {
+        console.log('User data saved successfully:', result);
+      })
+      .catch(error => {
+        console.error('Error saving user data:', error);
+      });
+}
+
+let currentUser = null;
+
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('loginForm');
-    const loginMessage = document.getElementById('loginMessage');
 
     loginForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Megakadályozza az űrlap alapértelmezett beküldését
+        event.preventDefault();
 
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
 
-        // Ellenőrizd a felhasználói adatokat
         loginUser(username, password);
     });
 });
@@ -19,16 +39,13 @@ function loginUser(username, password) {
         .then(data => {
             const user = data.find(user => user.username === username && user.password === password);
             if (user) {
-                // Sikeres bejelentkezés
+                currentUser = user.id;
                 document.getElementById('loginMessage').textContent = 'Sikeres bejelentkezés!';
                 
-                // Beállítjuk a currentUserID-t a sikeresen bejelentkezett user id-jére
-                let currentUserID = user.id;
+                saveCurrentUserToDB(currentUser);  // Itt hívjuk meg a saveCurrentUserToDB függvényt
 
-                // Átirányítás a home oldalra
                 window.location.href = '../home/student_home.html';
             } else {
-                // Sikertelen bejelentkezés
                 document.getElementById('loginMessage').textContent = 'Hibás felhasználónév vagy jelszó!';
             }
         })
