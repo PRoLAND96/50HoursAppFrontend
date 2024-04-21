@@ -166,6 +166,46 @@
           ""
         ]
       }
+    },
+    {
+      "id": "44db",
+      "name": "Zrínyi",
+      "type": "Tanulmányi segéd",
+      "location": {
+        "street": "Széchenyi",
+        "name": "Nyíregyháza",
+        "country": "Magyarország"
+      },
+      "description": {
+        "text": "jók a programok csak sok a köcsög",
+        "links": [
+          "https://www.merriam-webster.com/dictionary/shit"
+        ],
+        "pictures": [
+          "asdaws"
+        ]
+      },
+      "contact": "2b99"
+    },
+    {
+      "id": "fb31",
+      "name": "testinstitution",
+      "type": "Grafikus",
+      "location": {
+        "street": "Petőfi",
+        "name": "Nyíribrony",
+        "country": "Magyarország"
+      },
+      "description": {
+        "text": "It's a fucking test description",
+        "links": [
+          "https://www.16personalities.com/hu/ingyenes-szem%C3%A9lyis%C3%A9gteszt"
+        ],
+        "pictures": [
+          "asdas"
+        ]
+      },
+      "contact": "6841"
     }
   ],
   "users": [
@@ -411,6 +451,15 @@
       "IKSZCoordinator": "Józsika",
       "coordinatorEmail": "jozsika@gmail.com",
       "coordinatorPhone": "06204325423"
+    },
+    {
+      "id": "6841",
+      "username": "testcontact",
+      "lastName": "test",
+      "firstName": "contact",
+      "email": "testcontact@test.com",
+      "password": "testcontact",
+      "phoneNumber": "06987876565"
     }
   ],
   "contracts": [
@@ -431,7 +480,7 @@
           "name": "Nyíribrony",
           "country": "Magyarország"
         },
-        "OMID": "71628480440",
+        "omid": "71628480440",
         "schoolName": "Debreceni Egyetem",
         "IKSZCoordinator": "Józsika",
         "coordinatorEmail": "jozsika@gmail.com",
@@ -506,30 +555,5 @@
       "name": "Ügyfélszolgálati munkatárs"
     }
   ],
-  "currentUser": [
-    {
-      "id": "cc0d",
-      "currentUser": "2b99"
-    },
-    {
-      "id": "4951",
-      "currentUser": "6201"
-    },
-    {
-      "id": "4d5d",
-      "currentUser": "2b99"
-    },
-    {
-      "id": "3298",
-      "currentUser": "6201"
-    },
-    {
-      "id": "db3b",
-      "currentUser": "2b99"
-    },
-    {
-      "id": "2832",
-      "currentUser": "6201"
-    }
-  ]
+  "currentUser": []
 }

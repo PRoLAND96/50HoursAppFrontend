@@ -16,7 +16,7 @@ function fetchUserData() {
               document.getElementById('birthDate').textContent = `${user.birthDate}`;
               document.getElementById('email').textContent = `${user.email}`;
               document.getElementById('phoneNumber').textContent = `${user.phoneNumber}`;
-              document.getElementById('ikszCoordinator').textContent = `${user.ikszcoordinator}`;
+              document.getElementById('ikszCoordinator').textContent = `${user.ikszCoordinator}`;
               document.getElementById('omid').textContent = `${user.omid}`;
               document.getElementById('address').textContent = `${user.location.country}, ${user.location.name} ${user.location.street}`;
               document.getElementById('coordinatorEmail').textContent = `${user.coordinatorEmail}`;

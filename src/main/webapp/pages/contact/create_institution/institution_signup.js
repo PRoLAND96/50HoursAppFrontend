@@ -27,46 +27,51 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function submitRegisterForm() {
-    var name = document.getElementById('name').value;
-    var type = document.getElementById('type').value;
-    var street = document.getElementById('street').value;
-    var city = document.getElementById('city').value;
-    var country = document.getElementById('country').value;
-    var text = document.getElementById('text').value;
-    var links = document.getElementById('links').value.split(',');
-    var pictures = document.getElementById('pictures').value.split(',');
+    getCurrentUserID()
+      .then(currentUserID => {
+        var name = document.getElementById('name').value;
+        var type = document.getElementById('type').value;
+        var street = document.getElementById('street').value;
+        var city = document.getElementById('city').value;
+        var country = document.getElementById('country').value;
+        var text = document.getElementById('text').value;
+        var links = document.getElementById('links').value.split(',');
+        var pictures = document.getElementById('pictures').value.split(',');
 
-    var locationData = {
-        "street": street,
-        "name": city,
-        "country": country
-    };
+        var locationData = {
+            "street": street,
+            "name": city,
+            "country": country
+        };
 
-    var registerData = {
-        "name": name,
-        "type": type,
-        "location": locationData,
-        "description": {
-            "text": text,
-            "links": links,
-            "pictures": pictures
-        }
-    };
+        var registerData = {
+            "name": name,
+            "type": type,
+            "location": locationData,
+            "description": {
+                "text": text,
+                "links": links,
+                "pictures": pictures
+            },
+            "contact": currentUserID  // currentUserID használata a contact mezőben
+        };
 
-    fetch(apiURL + 'institutions', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(registerData)
-    })
-    .then(function(response) {
-        if (response.ok) {
-            alert("Sikeres regisztráció.")
-        }
-        throw new Error('Network response was not ok.');
-    })
-    .catch(function(error) {
-        alert("Hiba történt a regisztráció során: " + error.message);
-    });
+        fetch(apiURL + 'institutions', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(registerData)
+        })
+        .then(function(response) {
+            if (response.ok) {
+                alert("Sikeres regisztráció.")
+            }
+            throw new Error('Network response was not ok.');
+        })
+        .catch(function(error) {
+            alert("Hiba történt a regisztráció során: " + error.message);
+        });
+      })
+      .catch(error => console.error('Error getting current user ID:', error));
 }

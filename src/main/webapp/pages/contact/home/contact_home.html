@@ -6,7 +6,7 @@
     <title>Intézményi Kapcsolattartó Home Page</title>
     <link rel="stylesheet" href="../../../css/contact.css">
 </head>
-<body>
+<body onload="fetchUserData(); fetchInstitutionData();">
 <header>
     <h1>Közösségi Szolgálat Portál</h1>
     <nav>
@@ -15,22 +15,39 @@
             <li><a href="../create_institution/institution_signup.html">Munka létrehozása</a></li>
             <li><a href="../employees/employees.html">Diákok</a></li>
             <li><a href="../contact/contact.html">Kapcsolat</a></li>
+            <li class="logout"><a href="#" id="logoutBtn">Kijelentkezés</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <h2>Üdvözöljük az intézményi kapcsolattartó felületen!</h2>
     <section>
-        <h3>Intézmény adatai</h3>
-        <!-- Intézmény adatainak megjelenítése -->
+        <h3>Saját adatok</h3>
+        <div class="">
+            <p><b>Felhasználónév:</b> <span id="conactUsername"></span></p>
+            <p><b>Név: </b><span id="conactName"></span></p>
+            <p><b>Email-cím: </b><span id="conactEmail"></span></p>
+            <p><b>Telefonszám: </b><span id="conactPhoneNumber"></span></p>
+        </div>
     </section>
     <section>
-        <h3>Munkalehetőségek kezelése</h3>
-        <!-- Munkalehetőségek listázása és kezelése -->
+        <h3>Megajánlott munkalehetőség adatai</h3>
+        <div class="">
+            <p><b>Intézmény neve:</b> <span id="instututionName"></span></p>
+            <p><b>Munka típusa: </b><span id="instututionType"></span></p>
+            <p><b>Cím: </b><span id="instututionLocation"></span></p>
+            <p><b>Leírás: </b><span id="instututionText"></span></p>
+            <p><b>Linkek: </b><span id="instututionLinks"></span></p>
+            <p><b>Képek: </b><span id="instututionPictures"></span></p>
+        </div>
     </section>
 </main>
 <footer>
     <p>&copy; 2024 Közösségi Szolgálat Portál</p>
 </footer>
+<script src="../../../config.js"></script>
+<script src="../../../getCurrentUserID.js"></script>
+<script src="../../../logout.js"></script>
+<script src="contact_home.js"></script>
 </body>
 </html>
