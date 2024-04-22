@@ -37,12 +37,50 @@ function displayInstitutions(institutions) {
         const applyButton = document.createElement('button');
         applyButton.textContent = 'Jelentkezés';
         applyButton.classList.add('apply-button');
+        applyButton.addEventListener('click', async function() { // Make the function async
+            try {
+                const userId = await getCurrentUserID(); // Await the promise
+                applyToInstitution(institution.id, userId, institution.contact);
+            } catch (error) {
+                console.error('Error getting current user ID:', error);
+                alert('Hiba történt a felhasználó azonosítása során.');
+            }
+        });
         listItem.appendChild(applyButton);
 
         institutionList.appendChild(listItem);
     });
 }
 
+function applyToInstitution(institutionId, userId, contactId) {
+    const formData = {
+        institutionId: institutionId,
+        userId: userId,
+        contactId: contactId 
+    };
+
+    fetch(apiURL + 'apply', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Failed to apply: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Successfully applied:', data);
+        alert('Sikeres jelentkezés!');
+    })
+    .catch(error => {
+        console.error('Error applying:', error);
+        alert('Hiba történt a jelentkezés során.');
+    });
+}
 document.addEventListener('DOMContentLoaded', function() {
     fetchInstitutions();
 });

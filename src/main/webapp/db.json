@@ -1,559 +1,404 @@
 {
   "institutions": [
     {
-      "id": "2",
-      "name": "TestInstitution",
-      "type": "TestType",
+      "id": "3a61",
+      "name": "Test Institution1",
+      "type": "Környezetvédelmi munka",
       "location": {
-        "id": 2,
-        "name": null,
-        "country": "Hungary",
-        "street": "Budapest",
-        "lat": 47.497913,
-        "lon": 19.040236
-      },
-      "contact": null,
-      "description": {
-        "id": 2,
-        "text": "This is a test Description for the purpose of testing this description",
-        "links": [
-          "https://outlook.office.com/mail/",
-          "https://www.youtube.com/watch?v=gEFM5EoE4x4"
-        ],
-        "pictures": []
-      }
-    },
-    {
-      "id": "26",
-      "name": "faszkivan",
-      "type": "fasz",
-      "location": {
-        "id": 2,
-        "name": null,
-        "country": "Hungary",
-        "street": "Budapest",
-        "lat": 43,
-        "lon": 23
-      },
-      "contact": null,
-      "description": {
-        "id": 33,
-        "text": "This is a test Description for the purpose of testing this description",
-        "links": [
-          "https://outlook.office.com/mail/",
-          "https://www.youtube.com/watch?v=gEFM5EoE4x4"
-        ],
-        "pictures": []
-      }
-    },
-    {
-      "id": "c984",
-      "name": "Szegedi Tudományegyetem",
-      "type": "Informatika",
-      "location": {
-        "street": "Dugonics tér",
-        "name": "Szeged",
+        "street": "Bocskai",
+        "name": "Nyíregyháza",
         "country": "Magyarország"
       },
       "description": {
-        "text": "Informatikai képzés, programozói specializáció\nSzükséges programozástudás:\nJava, Python, SQL",
+        "text": "It's a test discription\nnumber 1",
         "links": [
-          "https://www.u-szeged.hu"
+          "https://en.wikipedia.org/wiki/Cat"
         ],
-        "pictures": []
-      }
+        "pictures": [
+          "TestPictureNumber1"
+        ]
+      },
+      "contact": "1893"
     },
     {
-      "id": "c985",
-      "name": "Budapesti Műszaki és Gazdaságtudományi Egyetem",
-      "type": "Mérnöki",
+      "id": "8e32",
+      "name": "Test Institution2",
+      "type": "Szociális munka",
       "location": {
-        "street": "Műegyetem rkp.",
-        "name": "Budapest",
+        "street": "Bocskai",
+        "name": "Nyíregyháza",
         "country": "Magyarország"
       },
       "description": {
-        "text": "Mérnöki képzés, informatikai specializáció\nSzükséges programozástudás:\nC++, C#, Matlab",
+        "text": "It's a test discription\nnumber 2",
         "links": [
-          "https://www.bme.hu"
-        ],
-        "pictures": []
-      }
-    },
-    {
-      "id": "c986",
-      "name": "Pécsi Tudományegyetem",
-      "type": "Orvostudomány",
-      "location": {
-        "street": "Szigeti út",
-        "name": "Pécs",
-        "country": "Magyarország"
-      },
-      "description": {
-        "text": "Orvostudományi képzés, általános orvosi specializáció\nSzükséges előképzettség:\nBiológia, Kémia",
-        "links": [
-          "https://www.pte.hu"
-        ],
-        "pictures": []
-      }
-    },
-    {
-      "id": "c987",
-      "name": "Eötvös Loránd Tudományegyetem",
-      "type": "Természettudomány",
-      "location": {
-        "street": "Pázmány Péter sétány",
-        "name": "Budapest",
-        "country": "Magyarország"
-      },
-      "description": {
-        "text": "Természettudományi képzés, biológiai specializáció\nSzükséges előképzettség:\nBiológia, Kémia",
-        "links": [
-          "https://www.elte.hu"
-        ],
-        "pictures": []
-      }
-    },
-    {
-      "id": "c988",
-      "name": "Óbudai Egyetem",
-      "type": "Gazdaságtudomány",
-      "location": {
-        "street": "Bécsi út",
-        "name": "Budapest",
-        "country": "Magyarország"
-      },
-      "description": {
-        "text": "Gazdaságtudományi képzés, üzleti informatikai specializáció\nSzükséges előképzettség:\nGazdaságtan, Informatika",
-        "links": [
-          "https://www.uni-obuda.hu"
-        ],
-        "pictures": []
-      }
-    },
-    {
-      "id": "c989",
-      "name": "Debreceni Egyetem",
-      "type": "Művészet",
-      "location": {
-        "street": "Egyetem tér",
-        "name": "Debrecen",
-        "country": "Magyarország"
-      },
-      "description": {
-        "text": "Művészeti képzés, festői specializáció\nSzükséges előképzettség:\nMűvészettörténet, Rajz",
-        "links": [
-          "https://www.unideb.hu"
-        ],
-        "pictures": []
-      }
-    },
-    {
-      "id": "c983",
-      "name": "Debrecen Informatika kar",
-      "type": "Programozó",
-      "location": {
-        "street": "Kassai",
-        "name": "Debrecen",
-        "country": "Magyarország"
-      },
-      "description": {
-        "text": "Frontend programozói lehetőség\nSzükséges programozástudás:\nJavascript, HTML, CSS",
-        "links": [
-          "https://inf.unideb.hu"
+          "https://en.wikipedia.org/wiki/Cat"
         ],
         "pictures": [
           ""
         ]
-      }
+      },
+      "contact": "cb16"
     },
     {
-      "id": "44db",
-      "name": "Zrínyi",
-      "type": "Tanulmányi segéd",
+      "id": "508b",
+      "name": "Test Institution3",
+      "type": "Környezetvédelmi munka",
       "location": {
-        "street": "Széchenyi",
+        "street": "Bocskai",
         "name": "Nyíregyháza",
         "country": "Magyarország"
       },
       "description": {
-        "text": "jók a programok csak sok a köcsög",
+        "text": "It's a test discription\nnumber 3",
         "links": [
-          "https://www.merriam-webster.com/dictionary/shit"
+          "https://en.wikipedia.org/wiki/Cat"
         ],
         "pictures": [
-          "asdaws"
+          ""
         ]
       },
-      "contact": "2b99"
+      "contact": "2afd"
     },
     {
-      "id": "fb31",
-      "name": "testinstitution",
-      "type": "Grafikus",
+      "id": "2479",
+      "name": "Test Institution4",
+      "type": "Oktatás és mentorálás",
       "location": {
-        "street": "Petőfi",
-        "name": "Nyíribrony",
+        "street": "Bocskai",
+        "name": "Nyíregyháza",
         "country": "Magyarország"
       },
       "description": {
-        "text": "It's a fucking test description",
+        "text": "It's a test discription\nnumber 4\n",
         "links": [
-          "https://www.16personalities.com/hu/ingyenes-szem%C3%A9lyis%C3%A9gteszt"
+          "https://en.wikipedia.org/wiki/Cat"
         ],
         "pictures": [
-          "asdas"
+          ""
         ]
       },
-      "contact": "6841"
+      "contact": "3813"
+    },
+    {
+      "id": "0e91",
+      "name": "Test Institution5",
+      "type": "Szociális munka",
+      "location": {
+        "street": "Bocskai",
+        "name": "Nyíregyháza",
+        "country": "Magyarország"
+      },
+      "description": {
+        "text": "It's a test discription\nnumber 5",
+        "links": [
+          "https://en.wikipedia.org/wiki/Cat"
+        ],
+        "pictures": [
+          ""
+        ]
+      },
+      "contact": "25f5"
+    },
+    {
+      "id": "f0c1",
+      "name": "Test Institution6",
+      "type": "Környezetvédelmi munka",
+      "location": {
+        "street": "Bocskai",
+        "name": "Nyíregyháza",
+        "country": "Magyarország"
+      },
+      "description": {
+        "text": "It's a test discription\nnumber 6",
+        "links": [
+          "https://en.wikipedia.org/wiki/Cat"
+        ],
+        "pictures": [
+          ""
+        ]
+      },
+      "contact": "4dcb"
     }
   ],
   "users": [
     {
-      "id": "3",
-      "username": "testuser2211",
-      "firstName": "User3",
-      "lastName": "User3",
-      "email": "testtestest@gmail.com",
-      "phoneNumber": "(+36) 232-1234",
-      "birthDate": "2024-03-11",
-      "gender": "f",
-      "password": "testpassword",
-      "coordinatorEmail": "TESTCOORDINATOR2@email.test",
-      "coordinatorPhone": "testcordphone2",
-      "roles": [
-        {
-          "id": 2,
-          "name": "USER"
-        },
-        {
-          "id": 1,
-          "name": "BACKOFFICE"
-        }
-      ],
-      "omid": "OMTEST2",
-      "schoolName": "testSchool",
-      "ikszcoordinator": "TESTCOORDINATOR2",
-      "location": {
-        "name": "Nyíregyháza",
-        "country": "Magyarország",
-        "street": "Bocskai utca",
-        "lat": null,
-        "lon": null
-      }
+      "id": "1893",
+      "username": "Contact1",
+      "lastName": "Mr. ",
+      "firstName": "Contact1",
+      "email": "mrcontact1@gmail.com",
+      "password": "Contact1",
+      "phoneNumber": "06306774881"
     },
     {
-      "id": "f7bf",
-      "username": "sad",
-      "lastName": "sad",
-      "firstName": "sad",
-      "email": "sad",
-      "password": "sad",
-      "phoneNumber": "213123"
+      "id": "cb16",
+      "username": "Contact2",
+      "lastName": "Mr. ",
+      "firstName": "Contact2",
+      "email": "mrcontact2@gmail.com",
+      "password": "Contact2",
+      "phoneNumber": "06306774882"
     },
     {
-      "id": "0078",
-      "username": "sad",
-      "lastName": "sad",
-      "firstName": "sad",
-      "email": "sad",
-      "password": "sad",
-      "phoneNumber": "213123"
+      "id": "2afd",
+      "username": "Contact3",
+      "lastName": "Mr. ",
+      "firstName": "Contact3",
+      "email": "mrcontact3@gmail.com",
+      "password": "Contact3",
+      "phoneNumber": "06306774883"
     },
     {
-      "id": "7c7a",
-      "username": "sad",
-      "lastName": "sad",
-      "firstName": "sad",
-      "email": "sad",
-      "password": "sad",
-      "phoneNumber": "213123"
+      "id": "3813",
+      "username": "Contact4",
+      "lastName": "Mr. ",
+      "firstName": "Contact4",
+      "email": "mrcontact4@gmail.com",
+      "password": "Contact4",
+      "phoneNumber": "06306774884"
     },
     {
-      "id": "2b99",
-      "username": "asd",
-      "lastName": "asd",
-      "firstName": "asd",
-      "email": "asd",
-      "password": "asd",
-      "phoneNumber": "asd",
-      "birthDate": "2000-11-11",
+      "id": "25f5",
+      "username": "Contact5",
+      "lastName": "Mr. ",
+      "firstName": "Contact5",
+      "email": "mrcontact5@gmail.com",
+      "password": "Contact5",
+      "phoneNumber": "06306774885"
+    },
+    {
+      "id": "4dcb",
+      "username": "Contact6",
+      "lastName": "Mr. ",
+      "firstName": "Contact6",
+      "email": "mrcontact6@gmail.com",
+      "password": "Contact6",
+      "phoneNumber": "06306774886"
+    },
+    {
+      "id": "cfdb",
+      "username": "TestStudent1",
+      "lastName": "Test",
+      "firstName": "Student1",
+      "email": "TestStudent1@gmail.com",
+      "password": "TestStudent1",
+      "phoneNumber": "06306774001",
+      "birthDate": "2000-01-01",
       "gender": "F",
       "location": {
-        "street": "Petőfi",
+        "street": "Petőfi utca",
         "name": "Nyíribrony",
         "country": "Magyarország"
       },
-      "OMID": "213123",
-      "schoolName": "asdasd",
-      "IKSZCoordinator": "asd",
-      "coordinatorEmail": "asd",
-      "coordinatorPhone": "1231"
+      "OMID": "71628480441",
+      "schoolName": "Test School 1",
+      "IKSZCoordinator": "Test Coordinator1",
+      "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
+      "coordinatorPhone": "06306774991"
     },
     {
-      "id": "4",
-      "username": "john_doe123",
-      "firstName": "John",
-      "lastName": "Doe",
-      "email": "john.doe@example.com",
-      "phoneNumber": "(+36) 123-4567",
-      "birthDate": "2000-05-15",
-      "gender": "m",
-      "password": "password123",
-      "coordinatorEmail": "john.coordinator@example.com",
-      "coordinatorPhone": "1234567",
-      "roles": [
-        {
-          "id": 2,
-          "name": "USER"
-        },
-        {
-          "id": 1,
-          "name": "BACKOFFICE"
-        }
-      ],
-      "omid": "OMID123",
-      "schoolName": "Example High School",
-      "ikszcoordinator": "John Coordinator",
-      "location": {
-        "name": "Budapest",
-        "country": "Hungary",
-        "street": "Main Street",
-        "lat": null,
-        "lon": null
-      }
-    },
-    {
-      "id": "5",
-      "username": "jane_smith456",
-      "firstName": "Jane",
-      "lastName": "Smith",
-      "email": "jane.smith@example.com",
-      "phoneNumber": "(+36) 765-4321",
-      "birthDate": "1998-08-20",
-      "gender": "f",
-      "password": "pass1234",
-      "coordinatorEmail": "jane.coordinator@example.com",
-      "coordinatorPhone": "7654321",
-      "roles": [
-        {
-          "id": 2,
-          "name": "USER"
-        }
-      ],
-      "omid": "OMID456",
-      "schoolName": "Example University",
-      "ikszcoordinator": "Jane Coordinator",
-      "location": {
-        "name": "Debrecen",
-        "country": "Hungary",
-        "street": "Hunyadi Street",
-        "lat": null,
-        "lon": null
-      }
-    },
-    {
-      "id": "6",
-      "username": "alice_wonder789",
-      "firstName": "Alice",
-      "lastName": "Wonder",
-      "email": "alice.wonder@example.com",
-      "phoneNumber": "(+36) 987-6543",
-      "birthDate": "2002-11-25",
-      "gender": "f",
-      "password": "qwerty123",
-      "coordinatorEmail": "alice.coordinator@example.com",
-      "coordinatorPhone": "9876543",
-      "roles": [
-        {
-          "id": 2,
-          "name": "USER"
-        }
-      ],
-      "omid": "OMID789",
-      "schoolName": "Wonder School",
-      "ikszcoordinator": "Alice Coordinator",
-      "location": {
-        "name": "Szeged",
-        "country": "Hungary",
-        "street": "Kossuth Street",
-        "lat": null,
-        "lon": null
-      }
-    },
-    {
-      "id": "7",
-      "username": "bob_brown012",
-      "firstName": "Bob",
-      "lastName": "Brown",
-      "email": "bob.brown@example.com",
-      "phoneNumber": "(+36) 111-2222",
-      "birthDate": "1995-04-10",
-      "gender": "m",
-      "password": "pass4321",
-      "coordinatorEmail": "bob.coordinator@example.com",
-      "coordinatorPhone": "1112222",
-      "roles": [
-        {
-          "id": 2,
-          "name": "USER"
-        }
-      ],
-      "omid": "OMID012",
-      "schoolName": "Brown School",
-      "ikszcoordinator": "Bob Coordinator",
-      "location": {
-        "name": "Miskolc",
-        "country": "Hungary",
-        "street": "Széchenyi Street",
-        "lat": null,
-        "lon": null
-      }
-    },
-    {
-      "id": "4594",
-      "username": "alice_walker013",
-      "lastName": "Alice",
-      "firstName": "Walker",
-      "email": "alice.walker@example.com",
-      "password": "pass1234",
-      "phoneNumber": "(+36) 333-4444",
-      "birthDate": "1998-07-15",
-      "gender": "N",
-      "location": {
-        "street": "Arany János utca",
-        "name": "Szeged",
-        "country": "Hungary"
-      },
-      "OMID": "OMID013",
-      "schoolName": "Walker School",
-      "IKSZCoordinator": "Alice Coordinator",
-      "coordinatorEmail": "alice.coordinator@example.com",
-      "coordinatorPhone": "3334444"
-    },
-    {
-      "id": "6201",
-      "username": "PRoland",
-      "lastName": "Pető",
-      "firstName": "Roland",
-      "email": "petoroli2001@gmail.com",
-      "password": "PRoland",
-      "phoneNumber": "06705423442",
-      "birthDate": "2001-09-06",
+      "id": "53c1",
+      "username": "TestStudent2",
+      "lastName": "Test",
+      "firstName": "Student2",
+      "email": "TestStudent2@gmail.com",
+      "password": "TestStudent2",
+      "phoneNumber": "06306774002",
+      "birthDate": "2000-01-02",
       "gender": "F",
       "location": {
-        "street": "Petőfi utca 64.",
+        "street": "Petőfi utca",
         "name": "Nyíribrony",
         "country": "Magyarország"
       },
-      "OMID": "71628480440",
-      "schoolName": "Debreceni Egyetem",
-      "IKSZCoordinator": "Józsika",
-      "coordinatorEmail": "jozsika@gmail.com",
-      "coordinatorPhone": "06204325423"
+      "OMID": "71628480442",
+      "schoolName": "Test School 2",
+      "IKSZCoordinator": "Test Coordinator2",
+      "coordinatorEmail": "TestCoordinatorEmail2@gmail.com",
+      "coordinatorPhone": "06306774992"
     },
     {
-      "id": "6841",
-      "username": "testcontact",
-      "lastName": "test",
-      "firstName": "contact",
-      "email": "testcontact@test.com",
-      "password": "testcontact",
-      "phoneNumber": "06987876565"
+      "id": "a90b",
+      "username": "TestStudent3",
+      "lastName": "Test",
+      "firstName": "Student3",
+      "email": "TestStudent3@gmail.com",
+      "password": "TestStudent3",
+      "phoneNumber": "06306774003",
+      "birthDate": "2000-01-03",
+      "gender": "F",
+      "location": {
+        "street": "Petőfi utca",
+        "name": "Nyíribrony",
+        "country": "Magyarország"
+      },
+      "OMID": "71628480443",
+      "schoolName": "Test School 3",
+      "IKSZCoordinator": "Test Coordinator3",
+      "coordinatorEmail": "TestCoordinatorEmail3@gmail.com",
+      "coordinatorPhone": "06306774993"
+    },
+    {
+      "id": "afac",
+      "username": "TestStudent4",
+      "lastName": "Test",
+      "firstName": "Student4",
+      "email": "TestStudent4@gmail.com",
+      "password": "TestStudent4",
+      "phoneNumber": "06306774004",
+      "birthDate": "2000-01-04",
+      "gender": "F",
+      "location": {
+        "street": "Petőfi utca",
+        "name": "Nyíribrony",
+        "country": "Magyarország"
+      },
+      "OMID": "71628480444",
+      "schoolName": "Test School 4",
+      "IKSZCoordinator": "Test Coordinator4",
+      "coordinatorEmail": "TestCoordinatorEmail4@gmail.com",
+      "coordinatorPhone": "06306774994"
+    },
+    {
+      "id": "aeab",
+      "username": "TestStudent5",
+      "lastName": "Test",
+      "firstName": "Student5",
+      "email": "TestStudent5@gmail.com",
+      "password": "TestStudent5",
+      "phoneNumber": "06306774005",
+      "birthDate": "2000-01-05",
+      "gender": "F",
+      "location": {
+        "street": "Petőfi utca",
+        "name": "Nyíribrony",
+        "country": "Magyarország"
+      },
+      "OMID": "71628480445",
+      "schoolName": "Test School 5",
+      "IKSZCoordinator": "Test Coordinator5",
+      "coordinatorEmail": "TestCoordinatorEmail5@gmail.com",
+      "coordinatorPhone": "06306774995"
+    },
+    {
+      "id": "b4c8",
+      "username": "TestStudent6",
+      "lastName": "Test",
+      "firstName": "Student6",
+      "email": "TestStudent6@gmail.com",
+      "password": "TestStudent6",
+      "phoneNumber": "06306774006",
+      "birthDate": "2000-01-06",
+      "gender": "F",
+      "location": {
+        "street": "Petőfi utca",
+        "name": "Nyíribrony",
+        "country": "Magyarország"
+      },
+      "OMID": "71628480446",
+      "schoolName": "Test School 6",
+      "IKSZCoordinator": "Test Coordinator6",
+      "coordinatorEmail": "TestCoordinatorEmail6@gmail.com",
+      "coordinatorPhone": "06306774996"
     }
   ],
   "contracts": [
     {
-      "id": "2",
+      "id": "e9f2",
       "student": {
-        "id": "6201",
-        "username": "PRoland",
-        "lastName": "Pető",
-        "firstName": "Roland",
-        "email": "petoroli2001@gmail.com",
-        "password": "PRoland",
-        "phoneNumber": "06705423442",
-        "birthDate": "2001-09-06",
+        "id": "cfdb",
+        "username": "TestStudent1",
+        "lastName": "Test",
+        "firstName": "Student1",
+        "email": "TestStudent1@gmail.com",
+        "phoneNumber": "06306774001",
+        "birthDate": "2000-01-01",
         "gender": "F",
         "location": {
-          "street": "Petőfi utca 64.",
+          "street": "Petőfi utca",
           "name": "Nyíribrony",
-          "country": "Magyarország"
+          "country": "Nyíribrony"
         },
-        "omid": "71628480440",
-        "schoolName": "Debreceni Egyetem",
-        "IKSZCoordinator": "Józsika",
-        "coordinatorEmail": "jozsika@gmail.com",
-        "coordinatorPhone": "06204325423"
+        "schoolName": "Test School 1",
+        "IKSZCoordinator": "Test Coordinator1",
+        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
+        "coordinatorPhone": "06306774991"
       },
-      "institution": "c989",
-      "startDate": "2021-07-24",
-      "hours": 42,
-      "endDate": "2024-10-05",
+      "institution": "3a61",
+      "contactId": "1893",
+      "startDate": "2024-03-10",
+      "hours": 34,
+      "endDate": "",
       "completed": false
     },
     {
-      "id": "1",
+      "id": "2ca4",
       "student": {
-        "id": 1,
-        "username": "user",
-        "firstName": "User",
-        "lastName": "User",
-        "email": "test@gmail.com",
-        "phoneNumber": "(+36) 232-2222",
-        "birthDate": "2024-04-12T16:04:36.763+00:00",
-        "gender": "m",
-        "password": "$2a$10$2a2CoQsrj6YneFDJ.aFEeOIY5pmpeR/Ij9BSy2sBaNOacovT4EmgK",
-        "coordinatorEmail": "TESTCOORDINATOR@email.test",
-        "coordinatorPhone": "testcordphone",
-        "preferedJobs": [],
-        "roles": [
-          {
-            "id": 2,
-            "name": "USER"
-          }
-        ],
+        "id": "53c1",
+        "username": "TestStudent2",
+        "lastName": "Test",
+        "firstName": "Student2",
+        "email": "TestStudent2@gmail.com",
+        "phoneNumber": "06306774002",
+        "birthDate": "2000-01-02",
+        "gender": "F",
         "location": {
-          "id": 1,
-          "name": null,
-          "country": "Hungary",
-          "street": "Nyíregyháza",
-          "lat": 47.95539,
-          "lon": 21.71671
+          "street": "Petőfi utca",
+          "name": "Nyíribrony",
+          "country": "Nyíribrony"
         },
-        "schoolName": "testSchool",
-        "omid": "OMTEST",
-        "ikszcoordinator": "TESTCOORDINATOR"
+        "schoolName": "Test School 2",
+        "IKSZCoordinator": "Test Coordinator2",
+        "coordinatorEmail": "TestCoordinatorEmail2@gmail.com",
+        "coordinatorPhone": "06306774992"
       },
-      "institution": "c983",
-      "startDate": "2024-04-05",
-      "hours": 32,
-      "endDate": "2024-10-05",
-      "completed": false
+      "institution": "8e32",
+      "contactId": "cb16",
+      "startDate": "2024-01-10",
+      "hours": 50,
+      "endDate": "2024-04-05",
+      "completed": true
     }
   ],
   "perform_login": [],
   "JobTypes": [
     {
       "id": "1",
-      "name": "Tanulmányi segéd"
+      "name": "Környezetvédelmi munka"
     },
     {
       "id": "2",
-      "name": "Programozó"
+      "name": "Szociális munka"
     },
     {
       "id": "3",
-      "name": "Grafikus"
+      "name": "Oktatás és mentorálás"
     },
     {
       "id": "4",
-      "name": "Kommunikációs szakértő"
+      "name": "Egészségügyi szolgálat"
     },
     {
       "id": "5",
-      "name": "Ügyfélszolgálati munkatárs"
+      "name": "Kulturális és művészeti tevékenység"
+    },
+    {
+      "id": "6",
+      "name": "Sport és rekreáció"
+    },
+    {
+      "id": "7",
+      "name": "Állatvédelem"
     }
   ],
-  "currentUser": []
+  "currentUser": [],
+  "apply": [
+    {
+      "id": "d6ac",
+      "institutionId": "8e32",
+      "userId": "53c1",
+      "contactId": "cb16"
+    }
+  ]
 }

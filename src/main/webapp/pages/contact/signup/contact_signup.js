@@ -5,7 +5,6 @@ function submitRegisterForm() {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     var phoneNumber = document.getElementById('phoneNumber').value;
-    var csrfToken = document.getElementById('csrf').value; // CSRF token from hidden input
 
     var registerData = {
         "username": username,
