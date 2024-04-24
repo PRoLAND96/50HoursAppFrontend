@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diák Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../../css/student.css">
+    <link rel="stylesheet" href="jobs.css">
+    <link rel="stylesheet" href="../../../css/navbar.css">
+    <link rel="stylesheet" href="../../../css/button.css">
+    
 </head>
 <body onload="fetchInstitutions()">
 <header>
     <h1>Közösségi Szolgálat Portál</h1>
-    <nav>
-        <ul>
-            <li><a href="../home/student_home.html">Főoldal</a></li>
-            <li class="currentp"><a href="../jobs/jobs.html">Munkák</a></li>
-            <li><a href="../progress/progress.html">Előrehaladás</a></li>
-            <li><a href="../contact/contacts.html">Kapcsolat</a></li>
-            <li class="logout"><a href="#" id="logoutBtn">Kijelentkezés</a></li>
-        </ul>
+    <nav class="topnav">
+        <a href="../home/student_home.html">Főoldal</a>
+        <a href="jobs.html" class="currentp">Munkák</a>
+        <a href="../progress/progress.html">Előrehaladás</a>
+        <a href="../contact/contacts.html">Kapcsolat</a>
+        <a href="#" class="logout" id="logoutBtn">Kijelentkezés</a>
     </nav>
 </header>
 <main>
     <h2>Üdvözöljük a közösségi szolgálat portálon!</h2>
     <section>
-        <h3>Rendelkezésre álló munkalehetőségek</h3>
-        <!-- Munkalehetőségek listázása -->
-        <div>
-            <label class="search" for="typeSearch">Search by Type:</label>
-            <input type="text" id="typeSearch" placeholder="Enter type...">
-            <button onclick="searchByType()">Search</button>
+        <div class="container">
+            <h3>Rendelkezésre álló munkalehetőségek</h3>
+            <div class="search">
+                <label for="typeSearch"></label>
+                <input type="text" class="searchTerm" id="typeSearch" placeholder="Keresés típus szerint...">
+                <button class="searchButton" id="searchButton" onclick="searchByType()"><i class="fa fa-search"></i></button>
+            </div>
         </div>
         <ul class="job-cards" id="institutionList">
             <!-- Institutions will be displayed here -->

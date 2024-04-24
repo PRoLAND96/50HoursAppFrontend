@@ -22,12 +22,18 @@ function displayInstitutions(institutions) {
         type.classList.add('type');
         listItem.appendChild(type);
 
-        const location = document.createElement('p');
-        location.textContent = institution.location ? 
-                               `${institution.location.country}, ${institution.location.street}` : 
-                               'N/A';
-        location.classList.add('location');
-        listItem.appendChild(location);
+        const locationContainer = document.createElement('p'); 
+        const locationIcon = document.createElement('i');
+        locationIcon.classList.add('fa', 'fa-map-marker');
+        locationContainer.appendChild(locationIcon);
+
+        const locationText = document.createElement('span'); 
+        locationText.textContent = institution.location ? 
+                               ` ${institution.location.name}, ${institution.location.street}` : 
+                               ' N/A';
+        locationContainer.appendChild(locationText);
+        locationContainer.classList.add('location');
+        listItem.appendChild(locationContainer);
 
         const description = document.createElement('p');
         description.textContent = `${institution.description.text}`;
@@ -36,7 +42,7 @@ function displayInstitutions(institutions) {
 
         const applyButton = document.createElement('button');
         applyButton.textContent = 'Jelentkezés';
-        applyButton.classList.add('apply-button');
+        applyButton.classList.add('apply-button', 'student-button');
         applyButton.addEventListener('click', async function() { // Make the function async
             try {
                 const userId = await getCurrentUserID(); // Await the promise
@@ -102,3 +108,7 @@ function searchByType() {
         }
     }
 }
+
+const searchButton = document.getElementById('searchButton');
+searchButton.classList.add('search-button'); 
+searchButton.addEventListener('click', searchByType);

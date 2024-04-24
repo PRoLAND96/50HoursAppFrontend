@@ -1,0 +1,126 @@
+ul{
+    list-style: none;   
+}
+.applicationsList li{
+    padding: 0px 30px 10px 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    border-top: solid 2px rgba(172, 172, 172, 0.753);
+    border-left: solid 2px rgba(172, 172, 172, 0.753);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 400px;
+    flex-basis: calc(33.333% - 20px);  
+    margin: 10px;  
+    box-sizing: border-box;  
+}
+
+.applicationsList li{
+    min-width: 300px;
+    flex-basis: calc(33.333% - 20px);  
+    margin: 10px;  
+    box-sizing: border-box; 
+}
+
+.applicationsList p{
+    padding-left: 10px;
+    margin-left: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.applicationsList li:hover{
+    transform: scale(1.03);  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    background-color: #ebebeb; 
+}
+
+.applicationsList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;  
+}
+.appliedStudentsList li{
+    padding: 0px 30px 10px 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    border-top: solid 2px rgba(172, 172, 172, 0.753);
+    border-left: solid 2px rgba(172, 172, 172, 0.753);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 400px;
+    flex-basis: calc(33.333% - 20px);  
+    margin: 10px;  
+    box-sizing: border-box;  
+}
+
+.appliedStudentsList li{
+    min-width: 300px;
+    flex-basis: calc(33.333% - 20px);  
+    margin: 10px;  
+    box-sizing: border-box; 
+}
+
+.appliedStudentsList h4{
+    text-align: center;
+}
+.appliedStudentsList p{
+    padding-left: 10px;
+    margin-left: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.appliedStudentsList li:hover{
+    transform: scale(1.03);  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    background-color: #ebebeb; 
+}
+
+.appliedStudentsList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;  
+}
+.edit-form {
+    color: #07cca8;
+    display: block;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    border-radius: 8px;
+    background-color: #f4f4f4;
+}
+
+.edit-form h3 {
+    color: #07cca8;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+select{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+

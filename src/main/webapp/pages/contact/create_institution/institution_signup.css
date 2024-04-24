@@ -11,10 +11,10 @@ body {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    color: #0077b6;
+    color: #01cda9;
 }
 div.header {
-    background-color: #0077b6;
+    background-color: #01cda9;
     color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -31,7 +31,7 @@ div.header {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    color: #0077b6;
+    color: #01cda9;
 }
 
 h1, h2, h3 {
@@ -68,7 +68,7 @@ input[type="email"] {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #0077b6;
+    background-color: #01cda9;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -90,4 +90,20 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+#type{
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #c8d8e8;
+}
+#text{
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #c8d8e8;
+
 }

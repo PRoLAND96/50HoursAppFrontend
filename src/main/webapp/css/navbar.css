@@ -1,0 +1,78 @@
+.topnav {
+    overflow: auto;
+    background-color: #0077b6;
+    width: 100%;
+  }
+  
+  .topnav a {
+    font-weight: bold;
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    background-color: lightskyblue;
+    color: #0077b6;
+  }
+  
+  .topnav a.currentp {
+    background-color: #fff;
+    color: #0077b6;
+  }
+  
+  .topnav .icon {
+    display: none;
+}
+  
+@media screen and (max-width: 600px) {
+    .topnav a {
+      float: none;
+      display: block;
+    }
+  }
+
+  .ctopnav {
+    overflow: auto;
+    background-color: #01cda9;
+    width: 100%;
+  }
+  
+  .ctopnav a {
+    font-weight: bold;
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .ctopnav a:hover {
+    background-color: rgb(133, 211, 185);
+    color: #008080;
+  }
+  
+  .ctopnav a.currentp {
+    background-color: #008080;
+    color: #01cda9;
+  }
+  #logoutBtn{
+    float: right;
+    display: block;
+    font-weight:normal;
+    margin-right: 20px;
+  }
+  @media screen and (max-width: 600px) {
+    .ctopnav a, #logoutBtn {
+      float: none;
+      display: block;
+      margin: auto;
+    }
+   
+  }
+ 
+  

@@ -1,0 +1,136 @@
+.job-cards li{
+    padding: 0px 30px 10px 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    border-top: solid 2px rgba(172, 172, 172, 0.753);
+    border-left: solid 2px rgba(172, 172, 172, 0.753);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 400px;
+}
+.job-cards p{
+    padding-left: 10px;
+}
+#institutionList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;  
+}
+.job-cards li {
+    flex-basis: calc(33.333% - 20px);  
+    margin: 10px;  
+    box-sizing: border-box;  
+}
+
+.job-cards li:hover {
+    transform: scale(1.03);  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    background-color: #ebebeb; 
+}
+
+.job-cards p{
+margin-left: 15px;
+padding-top: 0;
+padding-bottom: 0;
+}
+.type{
+    text-align: right;
+    padding-right: 10px;
+}
+.name{
+    border-bottom: solid 2px rgba(172, 172, 172, 0.753);
+    box-shadow: 2px 1px  rgba(0, 0, 0, 0.2);
+}
+.location{
+    color: dimgray;
+}
+
+p.description{
+    padding: 5px 10px 5px 5px;
+    font-size: 90%;
+    font-style: italic;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    min-height: 30px;
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;             
+    padding: 0px 10px 0px 10px;
+}
+
+.container h3 {
+    flex-basis: 100%;
+    margin-bottom: 10px; 
+}
+
+.search {
+    position: relative;
+    display: flex;
+    flex-basis: calc(60% - 150px);
+    min-width: 250px;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #0077b6;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: #0077b6;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #0077b6;
+    background: #0077b6;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+@media (max-width: 1200px) {
+    .job-cards li {
+        flex-basis: calc(50% - 20px);  
+    }
+}
+@media (max-width: 600px) {
+    .job-cards li {
+        flex-basis: 100%;  
+        margin: 10px 0;  
+        margin-left: 0;
+    }
+    .job-cards{
+        padding-inline-start: 0;
+        
+    }
+    #institutionList{
+        justify-content: center;
+    }
+}
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column; 
+        text-align: center;
+        box-shadow: 0 0 0 0;
+    }
+
+    .container .search {
+        flex-basis: 100%; 
+        margin-top: 5px; 
+        margin-bottom: 15px;
+
+    }
+}

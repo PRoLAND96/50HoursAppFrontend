@@ -5,43 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intézményi Kapcsolattartó Home Page</title>
     <link rel="stylesheet" href="../../../css/student.css">
-
-    <style>
-        #status {
-            padding: 5px;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-    
-        #status.teljesített {
-            background-color: green;
-            color: white;
-        }
-    
-        #status.folyamatban {
-            background-color: orange;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="progress.css">
+    <link rel="stylesheet" href="../../../css/navbar.css">
 </head>
 <body>
 <header>
     <h1>Közösségi Szolgálat Portál</h1>
-    <nav>
-        <ul>
-            <li><a href="../home/student_home.html">Főoldal</a></li>
-            <li><a href="../jobs/jobs.html">Munkák</a></li>
-            <li class="currentp"><a href="../progress/progress.html">Előrehaladás</a></li>
-            <li><a href="../contact/contacts.html">Kapcsolat</a></li>
-            <li class="logout"><a href="#" id="logoutBtn">Kijelentkezés</a></li>
-        </ul>
+    <nav class="topnav">
+        <a href="../home/student_home.html">Főoldal</a>
+        <a href="../jobs/jobs.html">Munkák</a>
+        <a href="progress.html" class="currentp">Előrehaladás</a>
+        <a href="../contact/contacts.html">Kapcsolat</a>
+        <a href="#" class="logout" id="logoutBtn">Kijelentkezés</a>
     </nav>
 </header>
 <main>
-    <h2>Közösségi szolgálat előrehaladása</h2>
+    <h2>Üdvözöljük a közösségi szolgálat portálon!</h2>
     <section>
         <h3>Közösségi szolgálat adatai</h3>
-        <div id="studentData">
+        <div class="pcontainer" id="studentData">
             <p><strong>Intézmény:</strong> <span id="institutionName">N/A</span></p>
             <p><strong>Összes óra:</strong> <span id="totalHours">0</span></p>
             <p><strong>Közösségi munka kezdete:</strong>  <span id="startDate"></span></p>

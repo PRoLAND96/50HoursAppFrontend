@@ -10,7 +10,10 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
+    gap: 0px;
+    box-shadow: #dbd8d8bd 4px 6px;
+    border: #f4f4f4 2px solid;
+    border-radius: 5px;
 }
 
 .grid-item {

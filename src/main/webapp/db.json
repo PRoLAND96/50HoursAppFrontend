@@ -10,7 +10,7 @@
         "country": "Magyarország"
       },
       "description": {
-        "text": "It's a test discription\nnumber 1",
+        "text": "It's a test discription\nnumber 1 asssssssssssaaa aaaaaaaaaaaaaa sad as das das das das sa dsa as das das das dasd asd as da  asd as as dsa das dsa ",
         "links": [
           "https://en.wikipedia.org/wiki/Cat"
         ],
@@ -328,7 +328,7 @@
       "institution": "3a61",
       "contactId": "1893",
       "startDate": "2024-03-10",
-      "hours": 34,
+      "hours": 35,
       "endDate": "",
       "completed": false
     },
@@ -359,6 +359,118 @@
       "hours": 50,
       "endDate": "2024-04-05",
       "completed": true
+    },
+    {
+      "id": "7e67",
+      "student": {
+        "id": "cfdb",
+        "username": "TestStudent1",
+        "lastName": "Test",
+        "firstName": "Student1",
+        "email": "TestStudent1@gmail.com",
+        "phoneNumber": "06306774001",
+        "birthDate": "2000-01-01",
+        "gender": "F",
+        "location": {
+          "street": "Petőfi utca",
+          "name": "Nyíribrony",
+          "country": "Nyíribrony"
+        },
+        "schoolName": "Test School 1",
+        "IKSZCoordinator": "Test Coordinator1",
+        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
+        "coordinatorPhone": "06306774991"
+      },
+      "institution": "3a61",
+      "contactId": "1893",
+      "startDate": "2024-04-17",
+      "hours": null,
+      "endDate": "",
+      "completed": false
+    },
+    {
+      "id": "4aff",
+      "student": {
+        "id": "cfdb",
+        "username": "TestStudent1",
+        "lastName": "Test",
+        "firstName": "Student1",
+        "email": "TestStudent1@gmail.com",
+        "phoneNumber": "06306774001",
+        "birthDate": "2000-01-01",
+        "gender": "F",
+        "location": {
+          "street": "Petőfi utca",
+          "name": "Nyíribrony",
+          "country": "Nyíribrony"
+        },
+        "schoolName": "Test School 1",
+        "IKSZCoordinator": "Test Coordinator1",
+        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
+        "coordinatorPhone": "06306774991"
+      },
+      "institution": "3a61",
+      "contactId": "1893",
+      "startDate": null,
+      "hours": null,
+      "endDate": null,
+      "completed": false
+    },
+    {
+      "id": "6cd9",
+      "student": {
+        "id": "cfdb",
+        "username": "TestStudent1",
+        "lastName": "Test",
+        "firstName": "Student1",
+        "email": "TestStudent1@gmail.com",
+        "phoneNumber": "06306774001",
+        "birthDate": "2000-01-01",
+        "gender": "F",
+        "location": {
+          "street": "Petőfi utca",
+          "name": "Nyíribrony",
+          "country": "Nyíribrony"
+        },
+        "schoolName": "Test School 1",
+        "IKSZCoordinator": "Test Coordinator1",
+        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
+        "coordinatorPhone": "06306774991"
+      },
+      "institution": "3a61",
+      "contactId": "1893",
+      "startDate": null,
+      "hours": null,
+      "endDate": null,
+      "completed": false
+    },
+    {
+      "id": "6f6b",
+      "student": {
+        "id": "cfdb",
+        "username": "TestStudent1",
+        "lastName": "Test",
+        "firstName": "Student1",
+        "email": "TestStudent1@gmail.com",
+        "phoneNumber": "06306774001",
+        "birthDate": "2000-01-01",
+        "gender": "F",
+        "location": {
+          "street": "Petőfi utca",
+          "name": "Nyíribrony",
+          "country": "Nyíribrony"
+        },
+        "schoolName": "Test School 1",
+        "IKSZCoordinator": "Test Coordinator1",
+        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
+        "coordinatorPhone": "06306774991"
+      },
+      "institution": "3a61",
+      "contactId": "1893",
+      "startDate": "2024-04-11",
+      "hours": 23,
+      "endDate": "",
+      "completed": false
     }
   ],
   "perform_login": [],
@@ -392,10 +504,57 @@
       "name": "Állatvédelem"
     }
   ],
-  "currentUser": [],
+  "currentUser": [
+    {
+      "id": "bfd6",
+      "currentUser": "cfdb"
+    }
+  ],
   "apply": [
     {
-      "id": "d6ac",
+      "id": "2bba",
+      "institutionId": "3a61",
+      "userId": "cfdb",
+      "contactId": "1893"
+    },
+    {
+      "id": "126c",
+      "institutionId": "8e32",
+      "userId": "cfdb",
+      "contactId": "cb16"
+    },
+    {
+      "id": "17e9",
+      "institutionId": "508b",
+      "userId": "cfdb",
+      "contactId": "2afd"
+    },
+    {
+      "id": "7f15",
+      "institutionId": "2479",
+      "userId": "cfdb",
+      "contactId": "3813"
+    },
+    {
+      "id": "ceec",
+      "institutionId": "2479",
+      "userId": "cfdb",
+      "contactId": "3813"
+    },
+    {
+      "id": "558f",
+      "institutionId": "508b",
+      "userId": "cfdb",
+      "contactId": "2afd"
+    },
+    {
+      "id": "2ec7",
+      "institutionId": "508b",
+      "userId": "cfdb",
+      "contactId": "2afd"
+    },
+    {
+      "id": "3ba2",
       "institutionId": "8e32",
       "userId": "53c1",
       "contactId": "cb16"

@@ -42,27 +42,33 @@ function displayApplication(application, users) {
         }
 
         const listItem = document.createElement('li');
+        listItem.classList.add('application-item');
         
         const name = document.createElement('h4');
-        name.textContent = `Név: ${user.firstName} ${user.lastName}`;
+        name.textContent = `${user.lastName} ${user.firstName}`;
+        name.classList.add('user-name');
         listItem.appendChild(name);
 
-        const email = document.createElement('p');  // Email cím megjelenítése
+        const email = document.createElement('p');  
         email.textContent = `Email: ${user.email}`;
+        email.classList.add('user-email');
         listItem.appendChild(email);
 
         const phoneNumber = document.createElement('p');
         phoneNumber.textContent = `Telefonszám: ${user.phoneNumber}`;
+        phoneNumber.classList.add('user-phone');
         listItem.appendChild(phoneNumber);
 
         const address = document.createElement('p');
         address.textContent = `Lakhely: ${user.location ? `${user.location.name}, ${user.location.street}` : 'N/A'}`;
+        address.classList.add('user-address');
         listItem.appendChild(address);
 
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Törlés';
+        deleteButton.classList.add('delete-button');
         deleteButton.addEventListener('click', () => {
-            deleteApplication(apply.id);  // Jelentkezés törlése
+            deleteApplication(apply.id);  
         });
         listItem.appendChild(deleteButton);
 

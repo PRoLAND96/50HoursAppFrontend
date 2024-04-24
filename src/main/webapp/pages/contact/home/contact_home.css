@@ -1,0 +1,13 @@
+p{
+    max-width: 600px;
+    margin-left: 20px;
+}
+b{
+    font-size: large;
+}
+.datas{
+    padding: 5px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.14);
+}

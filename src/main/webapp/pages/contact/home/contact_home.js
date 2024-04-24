@@ -40,10 +40,9 @@ function fetchInstitutionData() {
             if (institution) {
               document.getElementById('instututionName').textContent = `${institution.name}`;
               document.getElementById('instututionType').textContent = `${institution.type}`;
-              document.getElementById('instututionLocation').textContent = `${institution.location.street}, ${institution.location.name}, ${institution.location.country}`;
+              document.getElementById('instututionLocation').textContent = `${institution.location.country}, ${institution.location.name} ${institution.location.street}`;
               document.getElementById('instututionText').textContent = `${institution.description.text}`;
               document.getElementById('instututionLinks').textContent = `${institution.description.links.join(', ')}`;
-              document.getElementById('instututionPictures').textContent = `${institution.description.pictures.join(', ')}`;
             } else {
               console.error('Institution not found for current user ID:', currentUserID);
             }

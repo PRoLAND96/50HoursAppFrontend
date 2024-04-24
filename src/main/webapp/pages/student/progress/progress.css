@@ -1,0 +1,18 @@
+#status {
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#status.teljesített {
+    background-color: green;
+    color: white;
+}
+
+#status.folyamatban {
+    background-color: orange;
+    color: white;
+}
+.pcontainer {
+    padding-left: 20px;
+}

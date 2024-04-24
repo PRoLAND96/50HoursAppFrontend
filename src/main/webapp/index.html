@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Közösségi Szolgálat Portál</title>
-    <link rel="stylesheet" href="./css/home.css"> <!-- Link a CSS stíluslapodhoz -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <header>
     <h1>Közösségi Szolgálat Portál</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="../contact/contact.html">Contact</a></li>
-        </ul>
+    <nav class="topnav" id="indexnav">
+        <a href="index.html" class="currentp">Home</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 <main>
-    <section class="welcome-section">
-        <h2>Üdvözöljük a Közösségi Szolgálat Portálon!</h2>
-        <p>Itt a diákok jelentkezhetnek közösségi szolgálati lehetőségekre.</p>
-        <p>Az intézmények új állásokat hirdethetnek meg, és a diákok jelentkezhetnek ezekre az állásokra.</p>
-    </section>
-    <section class="student-section">
-        <h2>Diákok</h2>
-        <p>Diákok jelentkezhetnek közösségi szolgálati lehetőségekre, nyomon követhetik a feladataikat, és ellenőrizhetik az óráikat.</p>
-        <a href="pages/student/login/student_login.html">Belépés diákoknak</a>
-    </section>
-    <section class="employer-section">
-        <h2>Intézmények</h2>
-        <p>Munkáltatók hirdethetnek új közösségi szolgálati lehetőségeket a diákok számára.</p>
-        <a href="pages/contact/login/contact_login.html">Belépés munkáltatóknak</a>
+    <section class="secs">
+        <section class="welcome-section">
+            <h2>Üdvözöljük a Közösségi Szolgálat Portálon!</h2>
+            <p>Itt a diákok jelentkezhetnek közösségi szolgálati lehetőségekre.</p>
+            <p>Az intézmények új állásokat hirdethetnek meg, és a diákok jelentkezhetnek ezekre az állásokra.</p>
+        </section>
+        <section class="student-section">
+            <h2>Diákok</h2>
+            <p>Diákok jelentkezhetnek közösségi szolgálati lehetőségekre, nyomon követhetik a feladataikat, és ellenőrizhetik az óráikat.</p>
+            <a href="pages/student/login/student_login.html">Belépés diákoknak</a>
+        </section>
+        <section class="employer-section">
+            <h2>Intézmények</h2>
+            <p>Munkáltatók hirdethetnek új közösségi szolgálati lehetőségeket a diákok számára.</p>
+            <a href="pages/contact/login/contact_login.html">Belépés munkáltatóknak</a>
+        </section>   
     </section>
 </main>
 <footer>

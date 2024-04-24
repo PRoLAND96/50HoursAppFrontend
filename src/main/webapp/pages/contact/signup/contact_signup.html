@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regisztráció</title>
-    <link rel="stylesheet" href="../../../css/institution_login.css">
-    <!-- CSRF token meta tag -->
-    <meta name="_csrf" content="${_csrf.token}"/>
+    <link rel="stylesheet" href="contact_signup.css">
 </head>
 <body>
 <div class="login-container">
@@ -40,14 +38,11 @@
                 <label for="phoneNumber">Telefonszám:</label>
                 <input type="text" id="phoneNumber" name="phoneNumber" required>
             </div>
-            <!-- CSRF token hidden input -->
-            <input type="hidden" name="_csrf" id="csrf" value="${_csrf.token}"/>
             <button type="button" class="button" onclick="submitRegisterForm()">Regisztráció</button>
         </form>
         <p>Már van fiókod? <a href="../login/contact_login.html">Jelentkezz be!</a></p>
     </div>
 </div>
-
 <script src="../../../config.js"></script>
 <script src="contact_signup.js"></script>
 </body>
