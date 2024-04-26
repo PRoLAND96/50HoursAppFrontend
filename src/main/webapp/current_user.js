@@ -1,4 +1,4 @@
-function getCurrentUserID() {
+function current_user() {
     return fetch(apiURL + 'currentUser')
       .then(response => {
         if (!response.ok) {

@@ -28,12 +28,7 @@
     display: none;
 }
   
-@media screen and (max-width: 600px) {
-    .topnav a {
-      float: none;
-      display: block;
-    }
-  }
+
 
   .ctopnav {
     overflow: auto;
@@ -67,12 +62,11 @@
     margin-right: 20px;
   }
   @media screen and (max-width: 600px) {
-    .ctopnav a, #logoutBtn {
+    .ctopnav a, #logoutBtn, .topnav a {
       float: none;
       display: block;
       margin: auto;
     }
-   
   }
  
   

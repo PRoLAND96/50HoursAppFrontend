@@ -1,5 +1,5 @@
 function fetchUserData() {
-    getCurrentUserID()
+    current_user()
       .then(currentUserID => {
         fetch(apiURL + 'users')
           .then(response => {
@@ -25,7 +25,7 @@ function fetchUserData() {
 }
 
 function fetchInstitutionData() {
-    getCurrentUserID()
+    current_user()
       .then(currentUserID => {
         fetch(apiURL + 'institutions')
           .then(response => {

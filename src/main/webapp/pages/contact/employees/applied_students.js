@@ -68,7 +68,7 @@ function displayAppliedStudents(contracts, currentUserID) {
 
         const hours = document.createElement('p');
         hours.classList.add('hours');
-        hours.textContent = `Óraszám: ${filteredContract.hours} / 50`;
+        hours.textContent = `Óraszám: ${filteredContract.hours|| '0'} / 50`;
         listItem.appendChild(hours);
 
         const endDate = document.createElement('p');

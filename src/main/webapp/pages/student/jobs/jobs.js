@@ -45,7 +45,7 @@ function displayInstitutions(institutions) {
         applyButton.classList.add('apply-button', 'student-button');
         applyButton.addEventListener('click', async function() { // Make the function async
             try {
-                const userId = await getCurrentUserID(); // Await the promise
+                const userId = await current_user(); // Await the promise
                 applyToInstitution(institution.id, userId, institution.contact);
             } catch (error) {
                 console.error('Error getting current user ID:', error);

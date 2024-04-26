@@ -58,8 +58,11 @@ ul{
     box-sizing: border-box; 
 }
 
-.appliedStudentsList h4{
+.appliedStudentsList h4, .applicationsList h4{
     text-align: center;
+    box-shadow:  0 2px rgba(102, 102, 102, 0.5); 
+    padding-bottom: 5px;
+    width: 100%;
 }
 .appliedStudentsList p{
     padding-left: 10px;

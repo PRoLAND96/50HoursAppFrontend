@@ -411,9 +411,9 @@
       },
       "institution": "3a61",
       "contactId": "1893",
-      "startDate": null,
-      "hours": null,
-      "endDate": null,
+      "startDate": "2023-10-12",
+      "hours": 23,
+      "endDate": "",
       "completed": false
     },
     {
@@ -471,9 +471,92 @@
       "hours": 23,
       "endDate": "",
       "completed": false
+    },
+    {
+      "id": "1e9c",
+      "student": {
+        "id": "cfdb",
+        "username": "TestStudent1",
+        "lastName": "Test",
+        "firstName": "Student1",
+        "email": "TestStudent1@gmail.com",
+        "phoneNumber": "06306774001",
+        "birthDate": "2000-01-01",
+        "gender": "F",
+        "location": {
+          "street": "Petőfi utca",
+          "name": "Nyíribrony",
+          "country": "Nyíribrony"
+        },
+        "schoolName": "Test School 1",
+        "IKSZCoordinator": "Test Coordinator1",
+        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
+        "coordinatorPhone": "06306774991"
+      },
+      "institution": "3a61",
+      "contactId": "1893",
+      "startDate": null,
+      "hours": null,
+      "endDate": null,
+      "completed": false
+    },
+    {
+      "id": "1833",
+      "student": {
+        "id": "cfdb",
+        "username": "TestStudent1",
+        "lastName": "Test",
+        "firstName": "Student1",
+        "email": "TestStudent1@gmail.com",
+        "phoneNumber": "06306774001",
+        "birthDate": "2000-01-01",
+        "gender": "F",
+        "location": {
+          "street": "Petőfi utca",
+          "name": "Nyíribrony",
+          "country": "Nyíribrony"
+        },
+        "schoolName": "Test School 1",
+        "IKSZCoordinator": "Test Coordinator1",
+        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
+        "coordinatorPhone": "06306774991"
+      },
+      "institution": "3a61",
+      "contactId": "1893",
+      "startDate": "2020-02-02",
+      "hours": 4,
+      "endDate": "2023-02-04",
+      "completed": false
+    },
+    {
+      "id": "cdc5",
+      "student": {
+        "id": "cfdb",
+        "username": "TestStudent1",
+        "lastName": "Test",
+        "firstName": "Student1",
+        "email": "TestStudent1@gmail.com",
+        "phoneNumber": "06306774001",
+        "birthDate": "2000-01-01",
+        "gender": "F",
+        "location": {
+          "street": "Petőfi utca",
+          "name": "Nyíribrony",
+          "country": "Nyíribrony"
+        },
+        "schoolName": "Test School 1",
+        "IKSZCoordinator": "Test Coordinator1",
+        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
+        "coordinatorPhone": "06306774991"
+      },
+      "institution": "3a61",
+      "contactId": "1893",
+      "startDate": null,
+      "hours": null,
+      "endDate": null,
+      "completed": false
     }
   ],
-  "perform_login": [],
   "JobTypes": [
     {
       "id": "1",
@@ -508,6 +591,26 @@
     {
       "id": "bfd6",
       "currentUser": "cfdb"
+    },
+    {
+      "id": "d3d7",
+      "currentUser": "1893"
+    },
+    {
+      "id": "30d0",
+      "currentUser": "1893"
+    },
+    {
+      "id": "c9fa",
+      "currentUser": "1893"
+    },
+    {
+      "id": "284e",
+      "currentUser": "1893"
+    },
+    {
+      "id": "587c",
+      "currentUser": "1893"
     }
   ],
   "apply": [
@@ -558,6 +661,18 @@
       "institutionId": "8e32",
       "userId": "53c1",
       "contactId": "cb16"
+    },
+    {
+      "id": "2121",
+      "institutionId": "8e32",
+      "userId": "cfdb",
+      "contactId": "cb16"
+    },
+    {
+      "id": "57e1",
+      "institutionId": "508b",
+      "userId": "cfdb",
+      "contactId": "2afd"
     }
   ]
 }

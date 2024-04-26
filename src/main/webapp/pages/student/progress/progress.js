@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function fetchStudentData() {
-    getCurrentUserID()
+    current_user()
       .then(currentUserID => {
         Promise.all([
             fetch(apiURL + 'contracts').then(response => response.json()),

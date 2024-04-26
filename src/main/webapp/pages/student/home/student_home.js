@@ -1,5 +1,5 @@
 function fetchUserData() {
-    getCurrentUserID()
+    current_user()
       .then(currentUserID => {
         fetch(apiURL + 'users')
           .then(response => {
@@ -12,7 +12,7 @@ function fetchUserData() {
             const user = data.find(user => user.id === currentUserID);
             if (user) {
               document.getElementById('username').textContent = `${user.username}`;
-              document.getElementById('name').textContent = `${user.firstName} ${user.lastName}`;
+              document.getElementById('name').textContent = `${user.lastName} ${user.firstName}`;
               document.getElementById('birthDate').textContent = `${user.birthDate}`;
               document.getElementById('email').textContent = `${user.email}`;
               document.getElementById('phoneNumber').textContent = `${user.phoneNumber}`;

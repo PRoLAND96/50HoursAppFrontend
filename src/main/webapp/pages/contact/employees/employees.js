@@ -1,5 +1,5 @@
 function loadApplication() {
-    getCurrentUserID().then(currentUserID => {
+    current_user().then(currentUserID => {
         Promise.all([
             fetch(apiURL + 'apply'),
             fetch(apiURL + 'users'),

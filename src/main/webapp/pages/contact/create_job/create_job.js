@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function submitRegisterForm() {
-    getCurrentUserID()
+    current_user()
       .then(currentUserID => {
         var name = document.getElementById('name').value;
         var type = document.getElementById('type').value;
