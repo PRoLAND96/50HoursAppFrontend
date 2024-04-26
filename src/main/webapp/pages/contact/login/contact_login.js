@@ -42,7 +42,7 @@ function loginUser(username, password) {
                 currentUser = user.id;
                 document.getElementById('loginMessage').textContent = 'Sikeres bejelentkezés!';
                 
-                saveCurrentUserToDB(currentUser);  // Itt hívjuk meg a saveCurrentUserToDB függvényt
+                saveCurrentUserToDB(currentUser); 
 
                 window.location.href = '../home/contact_home.html';
             } else {

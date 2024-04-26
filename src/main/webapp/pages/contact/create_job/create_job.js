@@ -36,7 +36,6 @@ function submitRegisterForm() {
         var country = document.getElementById('country').value;
         var text = document.getElementById('text').value;
         var links = document.getElementById('links').value.split(',');
-        var pictures = document.getElementById('pictures').value.split(',');
 
         var locationData = {
             "street": street,
@@ -50,10 +49,9 @@ function submitRegisterForm() {
             "location": locationData,
             "description": {
                 "text": text,
-                "links": links,
-                "pictures": pictures
+                "links": links
             },
-            "contact": currentUserID  // currentUserID használata a contact mezőben
+            "contact": currentUserID 
         };
 
         fetch(apiURL + 'institutions', {

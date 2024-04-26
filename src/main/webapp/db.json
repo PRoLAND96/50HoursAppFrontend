@@ -2,120 +2,102 @@
   "institutions": [
     {
       "id": "3a61",
-      "name": "Test Institution1",
+      "name": "Városi Könyvtár",
       "type": "Környezetvédelmi munka",
       "location": {
-        "street": "Bocskai",
-        "name": "Nyíregyháza",
+        "street": "Szabadság tér",
+        "name": "Budapest",
         "country": "Magyarország"
       },
       "description": {
-        "text": "It's a test discription\nnumber 1 asssssssssssaaa aaaaaaaaaaaaaa sad as das das das das sa dsa as das das das dasd asd as da  asd as as dsa das dsa ",
+        "text": "Szívesen fogadunk önkénteseket, akik segítenek az események szervezésében, a könyvek rendezésében és a gyerekeknek tartott foglalkozások lebonyolításában.",
         "links": [
           "https://en.wikipedia.org/wiki/Cat"
-        ],
-        "pictures": [
-          "TestPictureNumber1"
         ]
       },
       "contact": "1893"
     },
     {
       "id": "8e32",
-      "name": "Test Institution2",
+      "name": "Városi Állatkert ",
       "type": "Szociális munka",
       "location": {
-        "street": "Bocskai",
-        "name": "Nyíregyháza",
+        "street": "Állatkert út",
+        "name": " Pécs",
         "country": "Magyarország"
       },
       "description": {
-        "text": "It's a test discription\nnumber 2",
+        "text": "Az állatkert és környezetvédelmi központ önkéntes programokat kínál az állatok gondozására, az oktatási tevékenységek támogatására és a környezetvédelmi projektekben való részvételre. ",
         "links": [
           "https://en.wikipedia.org/wiki/Cat"
-        ],
-        "pictures": [
-          ""
         ]
       },
       "contact": "cb16"
     },
     {
       "id": "508b",
-      "name": "Test Institution3",
+      "name": "Városi Idősek Otthona",
       "type": "Környezetvédelmi munka",
       "location": {
-        "street": "Bocskai",
-        "name": "Nyíregyháza",
+        "street": "Öreg utcza",
+        "name": "Szeged",
         "country": "Magyarország"
       },
       "description": {
-        "text": "It's a test discription\nnumber 3",
+        "text": "Az idősek otthona önkénteseket keres látogatásokhoz, társasági programok szervezéséhez és az idősek mindennapi tevékenységeinek támogatásához.",
         "links": [
           "https://en.wikipedia.org/wiki/Cat"
-        ],
-        "pictures": [
-          ""
         ]
       },
       "contact": "2afd"
     },
     {
       "id": "2479",
-      "name": "Test Institution4",
+      "name": "Városi Étkezőközpont",
       "type": "Oktatás és mentorálás",
       "location": {
-        "street": "Bocskai",
-        "name": "Nyíregyháza",
+        "street": "Kossuth tér",
+        "name": "Debrecen",
         "country": "Magyarország"
       },
       "description": {
-        "text": "It's a test discription\nnumber 4\n",
+        "text": "A gyermekvédelmi központ önkénteseket keres gyerekekkel való foglalkozásokra, oktatási tevékenységekre és kulturális programok szervezésére.",
         "links": [
           "https://en.wikipedia.org/wiki/Cat"
-        ],
-        "pictures": [
-          ""
         ]
       },
       "contact": "3813"
     },
     {
       "id": "0e91",
-      "name": "Test Institution5",
+      "name": "Városi Gyermekvédelmi Központ",
       "type": "Szociális munka",
       "location": {
-        "street": "Bocskai",
+        "street": "Bocskai utca",
         "name": "Nyíregyháza",
         "country": "Magyarország"
       },
       "description": {
-        "text": "It's a test discription\nnumber 5",
+        "text": "A gyermekvédelmi központ önkénteseket keres gyerekekkel való foglalkozásokra, oktatási tevékenységekre és kulturális programok szervezésére.",
         "links": [
           "https://en.wikipedia.org/wiki/Cat"
-        ],
-        "pictures": [
-          ""
         ]
       },
       "contact": "25f5"
     },
     {
       "id": "f0c1",
-      "name": "Test Institution6",
+      "name": "Városi Egészségügyi Központ",
       "type": "Környezetvédelmi munka",
       "location": {
-        "street": "Bocskai",
-        "name": "Nyíregyháza",
+        "street": "Egészség út ",
+        "name": "Székesfehérvár",
         "country": "Magyarország"
       },
       "description": {
-        "text": "It's a test discription\nnumber 6",
+        "text": "Az egészségügyi központ önkénteseket keres egészségügyi szűrésekhez, prevenciós programokhoz és betegellátáshoz.",
         "links": [
           "https://en.wikipedia.org/wiki/Cat"
-        ],
-        "pictures": [
-          ""
         ]
       },
       "contact": "4dcb"
@@ -179,8 +161,8 @@
     {
       "id": "cfdb",
       "username": "TestStudent1",
-      "lastName": "Test",
-      "firstName": "Student1",
+      "lastName": "Agyalá",
+      "firstName": "Gyula",
       "email": "TestStudent1@gmail.com",
       "password": "TestStudent1",
       "phoneNumber": "06306774001",
@@ -200,8 +182,8 @@
     {
       "id": "53c1",
       "username": "TestStudent2",
-      "lastName": "Test",
-      "firstName": "Student2",
+      "lastName": "Bekre",
+      "firstName": "Pál",
       "email": "TestStudent2@gmail.com",
       "password": "TestStudent2",
       "phoneNumber": "06306774002",
@@ -221,8 +203,8 @@
     {
       "id": "a90b",
       "username": "TestStudent3",
-      "lastName": "Test",
-      "firstName": "Student3",
+      "lastName": "Bevíz ",
+      "firstName": "Elek",
       "email": "TestStudent3@gmail.com",
       "password": "TestStudent3",
       "phoneNumber": "06306774003",
@@ -242,8 +224,8 @@
     {
       "id": "afac",
       "username": "TestStudent4",
-      "lastName": "Test",
-      "firstName": "Student4",
+      "lastName": "Boro ",
+      "firstName": "Zoltán",
       "email": "TestStudent4@gmail.com",
       "password": "TestStudent4",
       "phoneNumber": "06306774004",
@@ -263,8 +245,8 @@
     {
       "id": "aeab",
       "username": "TestStudent5",
-      "lastName": "Test",
-      "firstName": "Student5",
+      "lastName": "Ceruza ",
+      "firstName": "Elemér",
       "email": "TestStudent5@gmail.com",
       "password": "TestStudent5",
       "phoneNumber": "06306774005",
@@ -284,8 +266,8 @@
     {
       "id": "b4c8",
       "username": "TestStudent6",
-      "lastName": "Test",
-      "firstName": "Student6",
+      "lastName": "Dia ",
+      "firstName": "Dóra",
       "email": "TestStudent6@gmail.com",
       "password": "TestStudent6",
       "phoneNumber": "06306774006",
@@ -309,8 +291,8 @@
       "student": {
         "id": "cfdb",
         "username": "TestStudent1",
-        "lastName": "Test",
-        "firstName": "Student1",
+        "lastName": "Agyalá",
+        "firstName": "Gyula",
         "email": "TestStudent1@gmail.com",
         "phoneNumber": "06306774001",
         "birthDate": "2000-01-01",
@@ -337,8 +319,8 @@
       "student": {
         "id": "53c1",
         "username": "TestStudent2",
-        "lastName": "Test",
-        "firstName": "Student2",
+        "lastName": "Bekre",
+        "firstName": "Pál",
         "email": "TestStudent2@gmail.com",
         "phoneNumber": "06306774002",
         "birthDate": "2000-01-02",
@@ -361,81 +343,25 @@
       "completed": true
     },
     {
-      "id": "7e67",
+      "id": "9431",
       "student": {
-        "id": "cfdb",
-        "username": "TestStudent1",
-        "lastName": "Test",
-        "firstName": "Student1",
-        "email": "TestStudent1@gmail.com",
-        "phoneNumber": "06306774001",
-        "birthDate": "2000-01-01",
+        "id": "a90b",
+        "username": "TestStudent3",
+        "lastName": "Bevíz ",
+        "firstName": "Elek",
+        "email": "TestStudent3@gmail.com",
+        "phoneNumber": "06306774003",
+        "birthDate": "2000-01-03",
         "gender": "F",
         "location": {
           "street": "Petőfi utca",
           "name": "Nyíribrony",
           "country": "Nyíribrony"
         },
-        "schoolName": "Test School 1",
-        "IKSZCoordinator": "Test Coordinator1",
-        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
-        "coordinatorPhone": "06306774991"
-      },
-      "institution": "3a61",
-      "contactId": "1893",
-      "startDate": "2024-04-17",
-      "hours": null,
-      "endDate": "",
-      "completed": false
-    },
-    {
-      "id": "4aff",
-      "student": {
-        "id": "cfdb",
-        "username": "TestStudent1",
-        "lastName": "Test",
-        "firstName": "Student1",
-        "email": "TestStudent1@gmail.com",
-        "phoneNumber": "06306774001",
-        "birthDate": "2000-01-01",
-        "gender": "F",
-        "location": {
-          "street": "Petőfi utca",
-          "name": "Nyíribrony",
-          "country": "Nyíribrony"
-        },
-        "schoolName": "Test School 1",
-        "IKSZCoordinator": "Test Coordinator1",
-        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
-        "coordinatorPhone": "06306774991"
-      },
-      "institution": "3a61",
-      "contactId": "1893",
-      "startDate": "2023-10-12",
-      "hours": 23,
-      "endDate": "",
-      "completed": false
-    },
-    {
-      "id": "6cd9",
-      "student": {
-        "id": "cfdb",
-        "username": "TestStudent1",
-        "lastName": "Test",
-        "firstName": "Student1",
-        "email": "TestStudent1@gmail.com",
-        "phoneNumber": "06306774001",
-        "birthDate": "2000-01-01",
-        "gender": "F",
-        "location": {
-          "street": "Petőfi utca",
-          "name": "Nyíribrony",
-          "country": "Nyíribrony"
-        },
-        "schoolName": "Test School 1",
-        "IKSZCoordinator": "Test Coordinator1",
-        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
-        "coordinatorPhone": "06306774991"
+        "schoolName": "Test School 3",
+        "IKSZCoordinator": "Test Coordinator3",
+        "coordinatorEmail": "TestCoordinatorEmail3@gmail.com",
+        "coordinatorPhone": "06306774993"
       },
       "institution": "3a61",
       "contactId": "1893",
@@ -445,53 +371,25 @@
       "completed": false
     },
     {
-      "id": "6f6b",
+      "id": "0be2",
       "student": {
-        "id": "cfdb",
-        "username": "TestStudent1",
-        "lastName": "Test",
-        "firstName": "Student1",
-        "email": "TestStudent1@gmail.com",
-        "phoneNumber": "06306774001",
-        "birthDate": "2000-01-01",
+        "id": "afac",
+        "username": "TestStudent4",
+        "lastName": "Boro ",
+        "firstName": "Zoltán",
+        "email": "TestStudent4@gmail.com",
+        "phoneNumber": "06306774004",
+        "birthDate": "2000-01-04",
         "gender": "F",
         "location": {
           "street": "Petőfi utca",
           "name": "Nyíribrony",
           "country": "Nyíribrony"
         },
-        "schoolName": "Test School 1",
-        "IKSZCoordinator": "Test Coordinator1",
-        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
-        "coordinatorPhone": "06306774991"
-      },
-      "institution": "3a61",
-      "contactId": "1893",
-      "startDate": "2024-04-11",
-      "hours": 23,
-      "endDate": "",
-      "completed": false
-    },
-    {
-      "id": "1e9c",
-      "student": {
-        "id": "cfdb",
-        "username": "TestStudent1",
-        "lastName": "Test",
-        "firstName": "Student1",
-        "email": "TestStudent1@gmail.com",
-        "phoneNumber": "06306774001",
-        "birthDate": "2000-01-01",
-        "gender": "F",
-        "location": {
-          "street": "Petőfi utca",
-          "name": "Nyíribrony",
-          "country": "Nyíribrony"
-        },
-        "schoolName": "Test School 1",
-        "IKSZCoordinator": "Test Coordinator1",
-        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
-        "coordinatorPhone": "06306774991"
+        "schoolName": "Test School 4",
+        "IKSZCoordinator": "Test Coordinator4",
+        "coordinatorEmail": "TestCoordinatorEmail4@gmail.com",
+        "coordinatorPhone": "06306774994"
       },
       "institution": "3a61",
       "contactId": "1893",
@@ -501,53 +399,53 @@
       "completed": false
     },
     {
-      "id": "1833",
+      "id": "c909",
       "student": {
-        "id": "cfdb",
-        "username": "TestStudent1",
-        "lastName": "Test",
-        "firstName": "Student1",
-        "email": "TestStudent1@gmail.com",
-        "phoneNumber": "06306774001",
-        "birthDate": "2000-01-01",
+        "id": "aeab",
+        "username": "TestStudent5",
+        "lastName": "Ceruza ",
+        "firstName": "Elemér",
+        "email": "TestStudent5@gmail.com",
+        "phoneNumber": "06306774005",
+        "birthDate": "2000-01-05",
         "gender": "F",
         "location": {
           "street": "Petőfi utca",
           "name": "Nyíribrony",
           "country": "Nyíribrony"
         },
-        "schoolName": "Test School 1",
-        "IKSZCoordinator": "Test Coordinator1",
-        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
-        "coordinatorPhone": "06306774991"
+        "schoolName": "Test School 5",
+        "IKSZCoordinator": "Test Coordinator5",
+        "coordinatorEmail": "TestCoordinatorEmail5@gmail.com",
+        "coordinatorPhone": "06306774995"
       },
       "institution": "3a61",
       "contactId": "1893",
-      "startDate": "2020-02-02",
-      "hours": 4,
-      "endDate": "2023-02-04",
+      "startDate": null,
+      "hours": null,
+      "endDate": null,
       "completed": false
     },
     {
-      "id": "cdc5",
+      "id": "18f3",
       "student": {
-        "id": "cfdb",
-        "username": "TestStudent1",
-        "lastName": "Test",
-        "firstName": "Student1",
-        "email": "TestStudent1@gmail.com",
-        "phoneNumber": "06306774001",
-        "birthDate": "2000-01-01",
+        "id": "b4c8",
+        "username": "TestStudent6",
+        "lastName": "Dia ",
+        "firstName": "Dóra",
+        "email": "TestStudent6@gmail.com",
+        "phoneNumber": "06306774006",
+        "birthDate": "2000-01-06",
         "gender": "F",
         "location": {
           "street": "Petőfi utca",
           "name": "Nyíribrony",
           "country": "Nyíribrony"
         },
-        "schoolName": "Test School 1",
-        "IKSZCoordinator": "Test Coordinator1",
-        "coordinatorEmail": "TestCoordinatorEmail1@gmail.com",
-        "coordinatorPhone": "06306774991"
+        "schoolName": "Test School 6",
+        "IKSZCoordinator": "Test Coordinator6",
+        "coordinatorEmail": "TestCoordinatorEmail6@gmail.com",
+        "coordinatorPhone": "06306774996"
       },
       "institution": "3a61",
       "contactId": "1893",
@@ -589,28 +487,8 @@
   ],
   "currentUser": [
     {
-      "id": "bfd6",
+      "id": "0d40",
       "currentUser": "cfdb"
-    },
-    {
-      "id": "d3d7",
-      "currentUser": "1893"
-    },
-    {
-      "id": "30d0",
-      "currentUser": "1893"
-    },
-    {
-      "id": "c9fa",
-      "currentUser": "1893"
-    },
-    {
-      "id": "284e",
-      "currentUser": "1893"
-    },
-    {
-      "id": "587c",
-      "currentUser": "1893"
     }
   ],
   "apply": [
@@ -673,6 +551,48 @@
       "institutionId": "508b",
       "userId": "cfdb",
       "contactId": "2afd"
+    },
+    {
+      "id": "baa1",
+      "institutionId": "3a61",
+      "userId": "a90b",
+      "contactId": "1893"
+    },
+    {
+      "id": "0dce",
+      "institutionId": "3a61",
+      "userId": "afac",
+      "contactId": "1893"
+    },
+    {
+      "id": "e5ee",
+      "institutionId": "8e32",
+      "userId": "b4c8",
+      "contactId": "cb16"
+    },
+    {
+      "id": "fc29",
+      "institutionId": "508b",
+      "userId": "b4c8",
+      "contactId": "2afd"
+    },
+    {
+      "id": "4b32",
+      "institutionId": "2479",
+      "userId": "b4c8",
+      "contactId": "3813"
+    },
+    {
+      "id": "15a9",
+      "institutionId": "0e91",
+      "userId": "b4c8",
+      "contactId": "25f5"
+    },
+    {
+      "id": "321a",
+      "institutionId": "f0c1",
+      "userId": "b4c8",
+      "contactId": "4dcb"
     }
   ]
 }

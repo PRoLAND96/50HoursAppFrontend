@@ -24,16 +24,15 @@ function loadApplication() {
 }
 
 function displayApplication(application, users) {
-    const applicationSection = document.getElementById('applicationsList');  // A változó neve javítva
+    const applicationSection = document.getElementById('applicationsList');  
     if (!applicationSection) {
         console.error('Applications section not found');
         return;
     }
 
-    applicationSection.innerHTML = '';  // Lista tartalmának törlése
+    applicationSection.innerHTML = '';  
 
     application.forEach(apply => {
-        // Megkeressük a user-t az id alapján
         const user = users.find(user => user.id === apply.userId);
         
         if (!user) {
@@ -135,14 +134,12 @@ function createContract(user, institutionId, contactId) {
     })
     .then(data => {
         console.log('Contract created successfully:', data);
-        // Itt esetleg lehet valami visszajelzést adni a felhasználónak, hogy a szerződés sikeresen létrejött
     })
     .catch(error => {
         console.error('Error creating contract:', error);
     });
 }
 
-// Függvény a jelentkezés törlésére
 function deleteApplication(applicationId) {
     fetch(apiURL + 'apply/' + applicationId, {
         method: 'DELETE'
@@ -155,12 +152,11 @@ function deleteApplication(applicationId) {
     })
     .then(data => {
         console.log('Application deleted successfully:', data);
-        loadApplication();  // Frissítjük az alkalmazott diákok listáját
+        loadApplication();  
     })
     .catch(error => {
         console.error('Error deleting application:', error);
     });
 }
 
-// Az alkalmazott diákok listájának betöltése az oldal betöltésekor
 document.addEventListener('DOMContentLoaded', loadApplication);

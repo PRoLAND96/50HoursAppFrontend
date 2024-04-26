@@ -7,7 +7,7 @@ function displayAppliedStudents(contracts, currentUserID) {
         return;
     }
 
-    appliedStudentsSection.innerHTML = '';  // Lista tartalmának törlése
+    appliedStudentsSection.innerHTML = '';  
 
     const filteredContracts = contracts.filter(contract => contract.contactId === currentUserID);
     
@@ -94,7 +94,7 @@ function displayAppliedStudents(contracts, currentUserID) {
 function updateAndDisplayContract(contractId, updatedData, currentUserID) {
     updateContract(contractId, updatedData)
     .then(() => {
-        loadApplication(currentUserID);  // Újra betöltjük az adatokat a frissített szerződés megjelenítéséhez
+        loadApplication(currentUserID);  
     })
     .catch(error => {
         console.error('Error updating and displaying contract:', error);
@@ -148,7 +148,7 @@ function openEditForm(filteredContract) {
     });
     editForm.appendChild(saveButton);
 
-    // Töröld az előző megjelenített elemeket és jelenítsd meg a szerkesztési űrlapot
+    
     const appliedStudentsSection = document.getElementById('appliedStudentsList');
     appliedStudentsSection.innerHTML = '';
     appliedStudentsSection.appendChild(editForm);
@@ -167,8 +167,8 @@ function createFormInput(type, name, value) {
     input.name = name;
     input.value = type === 'number' ? parseFloat(value) : value || '';
     if (type === 'number') {
-        input.min = '0';  // opcionális, ha van minimális érték, amit elfogadsz
-        input.step = '1'; // opcionális, lépés, pl. 1 óra
+        input.min = '0';  
+        input.step = '1'; 
     }
     return input;
 }
@@ -205,7 +205,7 @@ function updateContract(contractId, updatedData) {
     })
     .then(updatedContract => {
         console.log('Updated contract:', updatedContract);
-        return updatedContract;  // visszaadja a frissített szerződést
+        return updatedContract;  
     });
 }
 

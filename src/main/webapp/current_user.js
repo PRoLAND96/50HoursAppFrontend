@@ -16,7 +16,7 @@ function current_user() {
       })
       .catch(error => {
         console.error('Error fetching currentUser data:', error);
-        throw error;  // Propagate the error
+        throw error;  
       });
 }
 function getCurrentID() {
@@ -37,6 +37,6 @@ function getCurrentID() {
     })
     .catch(error => {
       console.error('Error fetching currentUser data:', error);
-      throw error;  // Propagate the error
+      throw error;  
     });
 }

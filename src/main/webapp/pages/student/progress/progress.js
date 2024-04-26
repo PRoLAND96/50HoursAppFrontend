@@ -28,7 +28,7 @@ function displayStudentData(contracts, institutions, currentUserID) {
 
     const statusElement = document.getElementById('status');
     statusElement.textContent = status;
-    statusElement.className = status;  // osztály beállítása a státusz alapján
+    statusElement.className = status;  
 }
 
 function findInstitutionById(institutions, institutionId) {
